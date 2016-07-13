@@ -44,19 +44,20 @@ starter kits to help you prototype faster.
 
 Clone up your project in your code directory.
 
-Install dependencies:
+### Install dependencies
 ```
 bundle install
 ```
 
-Run the server
+### Run the server
 ```
 bundle exec middleman
 ```
 
-Deploy to Github Pages
+### Deploy to Github Pages
+
 ```
-bundle exec middleman deploy
+./bin/deploy
 ```
 
 
