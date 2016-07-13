@@ -1,0 +1,144 @@
+@-webkit-keyframes hero {
+  from {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+
+  50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+  }
+
+  82.5% {
+    -webkit-transform: scale(1.03);
+    -webkit-animation-timing-function: ease-out;
+    opacity: 1;
+  }
+
+to {
+    -webkit-transform: scale(1);
+  }
+}
+
+.hero {
+  background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
+}
+
+.global-nav {
+  padding: em(20) 0 0;
+}
+
+.global-nav-items {
+  float: right;
+  color: $secondary-accent-color;
+}
+
+.global-nav-item {
+  display: inline-block;
+  margin-right: em(20);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border-bottom: em(1.5) solid $secondary-accent-color;
+    cursor: pointer;
+  }
+
+  a {
+    color: white;
+  }
+}
+
+.global-nav-cta {
+  border-radius: em(1);
+  border: em(1.5) solid $secondary-accent-color;
+  padding: 0 em(5);
+
+  &:hover {
+    background: rgba($secondary-accent-color, 0.3);
+  }
+}
+
+.logo {
+  @include span-columns(1);
+  background: none;
+  color: $base-accent-color;
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  padding: em(2) em(7);
+}
+
+.hero-content {
+  padding: em(180) 0 0;
+  position: relative;
+  -webkit-animation-name: hero;
+  -webkit-animation-duration: .9s; 
+}
+
+.hero-content-text {
+  @include span-columns(6);
+  padding: em(50) 0 em(220);
+}
+
+.hero-content-text-title {
+  color: $secondary-accent-color;
+  font-size: em(32);
+  font-weight: 400;
+  margin: 0 0 em(5);
+  text-transform: uppercase;
+}
+
+.hero-content-text-subtitle {
+  color: $secondary-accent-color;
+  font-weight: 300;
+}
+
+.primary-cta {
+  color: #fff;
+  background-color: $action-color;
+  border-radius: em(3);
+  padding: em(5) em(10);
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.1em;
+
+  a {
+    color: white;
+  }
+
+  &:hover {
+    background-color: tint($dark-green, 15%);
+    cursor: pointer;
+  }
+}
+
+.hero-content-image {
+  bottom: 0;
+  height: 29em;
+  overflow: hidden;
+  position: absolute;
+  right: em(225);
+  width: em(360);
+}
+
+.hero-content-image-background {
+  @include span-columns(6);
+  background-image: image-url("iphone.png");
+  background-repeat: no-repeat;
+  background-size: em(360);
+  float: right;
+  height: 100%;
+  position: absolute;
+  width: em(380);
+}
+
+.hero-content-image-main {
+  background-image: image-url("iphone-screen.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  margin-left: em(29);
+  margin-top: em(105);
+}

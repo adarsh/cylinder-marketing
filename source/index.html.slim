@@ -1,6 +1,107 @@
----
-title: cylinder digital
----
+header.hero
+  nav.global-nav
+    .wrap-container
+      .logo
+        =link_to('/')
+          =image_tag("cylinder_gray.png")
+      ul.global-nav-items
+        li.global-nav-item
+          =link_to("/#about")
+            | About
+        li.global-nav-item
+          =link_to("/#faq")
+            | FAQs
+        li.global-nav-item.global-nav-cta
+          =link_to("/#contact-us")
+            | Contact Us
+  section.hero-content
+    .wrap-container
+      .hero-content-text
+        h1.hero-content-text-title
+          |  Cylinder
+        h3.hero-content-text-subtitle
+          |  Ruby and Rails Consulting
+        p.primary-cta
+          =link_to("/#contact-us")
+            |  Contact Us
+      .hero-content-image
+        .hero-content-image-background
+          .hero-content-image-main
 
-body
-  h1 hello world
+section#about
+  .wrap-container.padding-container
+    .features-content
+      h2.features-content-title
+        |  High-Quality Code, Strong Leadership
+      p.features-content-subtitle
+        |  Maybe you need some code written, maybe you need a CTO for a bit.
+      ul.features-block
+        li.features-block-item
+          =image_tag("150x150_placeholder.png")
+          h5.features-block-title
+            | Clean Code
+          p
+            | Well-tested, high-quality Ruby and Rails Code which costs you less to maintain and extend.
+        li.features-block-item
+          =image_tag("150x150_placeholder.png")
+          h5.features-block-title
+            |  Coaching
+          p
+            | Level up your teammmates forever with coaching and mentorship.
+        li.features-block-item
+          =image_tag("150x150_placeholder.png")
+          h5.features-block-title
+            | Leadership
+          p
+            | Get help with system architecture, coding best practices, and external meetings.
+
+section#faq.bumper-section.section-background
+  .wrap-container.padding-container
+    .bumper-text-wrapper.-left
+      h2.bumper-item-header
+        | Can you help us?
+      p.bumper-item-text
+        |  Yes!
+      p.primary-cta
+        =link_to("/#contact-us")
+          |  Contact Us
+    .bumper-graphic-wrapper.-right
+      img.bumper-graphic-item
+        =image_tag("responsive-screens.png")
+
+section#contact-us.bumper-section
+  .wrap-container.padding-container
+    .bumper-text-wrapper.-left
+      h2.bumper-item-header
+        | Contact Us
+      p.bumper-item-text
+        | Send us your email address
+        |  and we will get in touch to discuss
+        |  your work with you
+        |  and how we can help.
+      form action="https://formspree.io/hi@cylinder.work" method="POST"
+        input name="_replyto" required="true" type="email" placeholder="my.name@example.com"/
+        input type="hidden" name="_subject" value="Hello from Cylinder"/
+        input name="name" required="true" type="text" placeholder="Your Name"/
+        .primary-cta
+          input type="submit" value="Send" /
+        /input type="hidden" name="_next" value="//cylinder.work/thanks"/
+    .bumper-graphic-wrapper.-right
+      img.bumper-graphic-item
+        =image_tag("cylinder_gray.png")
+
+
+footer.global-footer
+  .wrap-container
+    ul.global-footer-items
+      li.global-footer-item
+        =link_to("/#about")
+          | about
+      li.global-footer-item
+        =link_to("/#faq")
+          | faq
+      li.global-footer-item
+        =link_to("/#contact-us")
+          | contact us
+    div
+      | © 2016 Adarsh Pandit Consulting, Inc.

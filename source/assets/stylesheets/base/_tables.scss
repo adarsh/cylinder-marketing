@@ -1,4 +1,5 @@
 table {
+  @include font-feature-settings("kern", "liga", "tnum");
   border-collapse: collapse;
   margin: $small-spacing 0;
   table-layout: fixed;
@@ -6,7 +7,7 @@ table {
 }
 
 th {
-  border-bottom: 1px solid shade($base-border-color, 25%);
+  border-bottom: 1px solid darken($base-border-color, 15%);
   font-weight: 600;
   padding: $small-spacing 0;
   text-align: left;
