@@ -24,12 +24,15 @@
 }
 
 .features-block-item {
-  @include span-columns(4);
-  display: inline-block;
-}
+  @include span-columns(12 of 12);
 
-.features-block-title {
-  margin-top: em(10);
+  @include media($medium-screen-up) {
+    @include span-columns(4 of 12);
+  }
+
+  .features-block-title {
+    margin-top: em(10);
+  }
 }
 
 .bumper-section {
