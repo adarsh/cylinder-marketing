@@ -63,6 +63,7 @@ to {
 
 .logo {
   @include span-columns(1);
+
   background: none;
   color: $base-accent-color;
   display: inline-block;
@@ -125,20 +126,24 @@ to {
 }
 
 .hero-content-image-background {
-  @include span-columns(6);
-  background-image: image-url("iphone.png");
-  background-repeat: no-repeat;
-  background-size: em(360);
-  float: right;
-  height: 100%;
-  position: absolute;
-  width: em(380);
-}
+  display: none;
 
-.hero-content-image-main {
-  background-image: image-url("iphone-screen.png");
-  background-repeat: no-repeat;
-  height: 100%;
-  margin-left: em(29);
-  margin-top: em(105);
+  @include media($large-screen-up) {
+    @include span-columns(6);
+    background-image: image-url('iphone.png');
+    background-repeat: no-repeat;
+    background-size: em(360);
+    float: right;
+    height: 100%;
+    position: absolute;
+    width: em(380);
+
+    .hero-content-image-main {
+      background-image: image-url('iphone-screen.png');
+      background-repeat: no-repeat;
+      height: 100%;
+      margin-left: em(29);
+      margin-top: em(105);
+    }
+  }
 }
