@@ -44,6 +44,15 @@ starter kits to help you prototype faster.
 
 Clone up your project in your code directory.
 
+### Ruby
+Install a Ruby manager like
+
+* [`rbenv`](https://github.com/rbenv/rbenv#basic-github-checkout) 
+* [`chruby`](https://github.com/postmodern/chruby#install)
+* [`rvm`](https://github.com/rvm/rvm#installation)
+
+This repository uses Ruby version 2.3.1.
+
 ### Install dependencies
 ```
 bundle install
