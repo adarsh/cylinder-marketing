@@ -1,0 +1,20 @@
+section#contact-us.bumper-section
+  .wrap-container.padding-container
+    .bumper-text-wrapper.-left
+      h2.bumper-item-header
+        | Contact Us
+      p.bumper-item-text
+        | Send us your email address
+        |  and we will get in touch to discuss
+        |  your work with you
+        |  and how we can help.
+      form action="https://formspree.io/hi@cylinder.work" method="POST"
+        input name="_replyto" required="true" type="email" placeholder="my.name@example.com"/
+        input type="hidden" name="_subject" value="Hello from Cylinder"/
+        input name="name" required="true" type="text" placeholder="Your Name"/
+        .primary-cta
+          input type="submit" value="Send" /
+        /input type="hidden" name="_next" value="//cylinder.work/thanks"/
+    .bumper-graphic-wrapper.-right
+      img.bumper-graphic-item
+        =image_tag("cylinder_gray.png")

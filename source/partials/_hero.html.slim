@@ -1,0 +1,29 @@
+header.hero
+  nav.global-nav
+    .wrap-container
+      .logo
+        =link_to('/')
+          =image_tag("cylinder_gray.png")
+      ul.global-nav-items
+        li.global-nav-item
+          =link_to("/#about")
+            | About
+        li.global-nav-item
+          =link_to("/#faq")
+            | FAQs
+        li.global-nav-item.global-nav-cta
+          =link_to("/#contact-us")
+            | Contact Us
+  section.hero-content
+    .wrap-container
+      .hero-content-text
+        h1.hero-content-text-title
+          |  Cylinder
+        h3.hero-content-text-subtitle
+          |  We Solve Business Problems with Digital Products
+        p.primary-cta
+          =link_to("/#contact-us")
+            |  Contact Us
+      .hero-content-image
+        .hero-content-image-background
+          .hero-content-image-main
