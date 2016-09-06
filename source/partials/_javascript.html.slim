@@ -3,3 +3,11 @@
 
 - if build?
   = javascript_include_tag 'google_analytics'
+
+script type="application/ld+json"
+  | {
+  |   "@context": "http://schema.org",
+  |   "@type": "Organization",
+  |   "url": "http://cylinder.work",
+  |   "logo": "http://cylinder.work/assets/images/cylinder_gray.png"
+  | }
