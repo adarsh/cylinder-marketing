@@ -24,3 +24,9 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
 end
+
+set :url_root, 'http://cylinder.work'
+
+activate :search_engine_sitemap,
+  default_priority: 1,
+  default_change_frequency: 'weekly'
