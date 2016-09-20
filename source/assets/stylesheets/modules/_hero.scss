@@ -27,54 +27,6 @@
   background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
 }
 
-.global-nav {
-  padding: em(20) 0 0;
-}
-
-.global-nav-items {
-  color: $secondary-accent-color;
-  float: right;
-}
-
-.global-nav-item {
-  display: inline-block;
-  margin-right: em(20);
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    border-bottom: em(1.5) solid $secondary-accent-color;
-    cursor: pointer;
-  }
-
-  a {
-    color: $white;
-  }
-}
-
-.global-nav-cta {
-  border: em(1.5) solid $secondary-accent-color;
-  border-radius: em(1);
-  padding: 0 em(5);
-
-  &:hover {
-    background: rgba($secondary-accent-color, 0.3);
-  }
-}
-
-.logo {
-  @include span-columns(1);
-
-  background: none;
-  color: $base-accent-color;
-  display: inline-block;
-  float: left;
-  font-weight: 700;
-  padding: em(2) em(7);
-}
-
 .hero-content {
   @include animation-name(hero);
   @include animation-duration(0.9s);
@@ -89,7 +41,7 @@
 }
 
 .hero-content-text-title {
-  color: $secondary-accent-color;
+  color: $hero-text-color;
   font-size: em(32);
   font-weight: 400;
   margin: 0 0 em(5);
@@ -97,7 +49,7 @@
 }
 
 .hero-content-text-subtitle {
-  color: $secondary-accent-color;
+  color: $hero-text-color;
   font-weight: 300;
 }
 

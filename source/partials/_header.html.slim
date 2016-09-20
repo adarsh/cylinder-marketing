@@ -1,0 +1,17 @@
+nav.global-nav
+  .wrap-container
+    .global-nav-container.flex-row.flex-row--separate
+      .logo
+        =link_to('/')
+          =image_tag('cylinder_gray.png')
+      .global-nav-items
+        ul
+          li.global-nav-item
+            =link_to('/#about')
+              | About
+          li.global-nav-item
+            =link_to('/#faq')
+              | FAQs
+          li.global-nav-item.global-nav-cta
+            =link_to('/#contact-us')
+              | Contact Us

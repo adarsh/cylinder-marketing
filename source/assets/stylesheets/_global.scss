@@ -2,3 +2,9 @@ body {
   background-color: $base-background-color;
   color: $dark-gray;
 }
+
+.wrap-container {
+  @include outer-container;
+
+  padding: 0 1rem;
+}

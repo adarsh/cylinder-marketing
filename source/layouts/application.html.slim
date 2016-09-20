@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title= current_page.data.title || 'cylinder'
+    title= current_page.data.title || 'Cylinder Digital: Solving Business Problems with Digital Products'
     meta charset='utf-8'
     meta content='IE=edge,chrome=1' http={ equiv: 'X-UA-Compatible' }
     meta name='viewport' content='width=device-width initial-scale=1'
@@ -9,6 +9,7 @@ html
     meta name='google-site-verification' content='eJc0q1CLHq7k3GrVWDbzcEj1cIVnIOFAILKomlfQ6uQ'
 
   body class=page_classes
+    = partial('partials/header')
     = yield
     = partial('partials/footer')
     = partial('partials/javascript')

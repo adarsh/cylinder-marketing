@@ -1,0 +1,45 @@
+.global-nav {
+  padding: em(5) 0;
+}
+
+.global-nav-container {
+  flex-direction: row;
+}
+
+.logo {
+  @include span-columns(1);
+}
+
+.global-nav-items {
+  @include span-columns(9);
+  @include omega();
+
+  color: $secondary-accent-color;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.global-nav-item {
+  border-radius: $base-border-radius;
+  display: inline-block;
+  margin-right: em(20);
+  padding: 0 em(5);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: $highlight-background-color;
+    color: $highlight-font-color;
+    cursor: pointer;
+  }
+
+  a {
+    color: $dark-gray;
+  }
+}
+
+.global-nav-cta {
+  border: em(1.5) solid $base-accent-color;
+}

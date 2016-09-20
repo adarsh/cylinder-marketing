@@ -1,0 +1,19 @@
+.flex-row {
+  display: flex;
+  flex-direction: column;
+
+  @include media($medium-screen-up) {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  &--separate {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--around {
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
