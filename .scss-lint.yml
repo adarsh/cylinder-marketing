@@ -1,0 +1,10 @@
+scss_files: 'source/assets/stylesheets/**/*.scss'
+
+exclude:
+  - 'source/assets/stylesheets/vendor/_normalize.scss'
+  - 'source/assets/stylesheets/normalize.css'
+
+linters:
+  LeadingZero:
+    enabled: true
+    style: include_zero

@@ -63,8 +63,8 @@
 }
 
 .bumper-graphic-wrapper {
-  order: 1;
   margin: 0 auto;
+  order: 1;
   width: 100%;
 
   @include media($medium-screen-up) {
@@ -77,8 +77,8 @@
 }
 
 .bumper-text-wrapper {
-  order: 2;
   margin-top: 2em;
+  order: 2;
   text-align: center;
 
   @include media($medium-screen-up) {

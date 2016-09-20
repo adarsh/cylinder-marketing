@@ -11,3 +11,7 @@ fi
 # Set up Ruby dependencies via Bundler
 echo "Installing Dependencies..."
 bundle install
+
+
+echo "Installing git hooks via overcommit..."
+overcommit --install

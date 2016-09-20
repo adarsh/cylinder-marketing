@@ -1,22 +1,25 @@
-@-webkit-keyframes hero {
+@include keyframes(hero) {
   from {
-    -webkit-transform: scale(0);
+    @include transform(scale(0));
+
     opacity: 0;
   }
 
   50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
+    @include transform(scale(0));
+
+    opacity: 0;
   }
 
   82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
+    @include animation-timing-function(ease-out);
+    @include transform(scale(1.03));
+
     opacity: 1;
   }
 
-to {
-    -webkit-transform: scale(1);
+  to {
+    @include transform(scale(1));
   }
 }
 
@@ -29,8 +32,8 @@ to {
 }
 
 .global-nav-items {
-  float: right;
   color: $secondary-accent-color;
+  float: right;
 }
 
 .global-nav-item {
@@ -47,13 +50,13 @@ to {
   }
 
   a {
-    color: white;
+    color: $white;
   }
 }
 
 .global-nav-cta {
-  border-radius: em(1);
   border: em(1.5) solid $secondary-accent-color;
+  border-radius: em(1);
   padding: 0 em(5);
 
   &:hover {
@@ -73,10 +76,11 @@ to {
 }
 
 .hero-content {
+  @include animation-name(hero);
+  @include animation-duration(0.9s);
+
   padding: em(180) 0 0;
   position: relative;
-  -webkit-animation-name: hero;
-  -webkit-animation-duration: .9s; 
 }
 
 .hero-content-text {
@@ -98,16 +102,16 @@ to {
 }
 
 .primary-cta {
-  color: #fff;
   background-color: $action-color;
   border-radius: em(3);
-  padding: em(5) em(10);
+  color: $white;
   display: inline-block;
-  font-weight: 500;
   font-size: 1.1em;
+  font-weight: 500;
+  padding: em(5) em(10);
 
   a {
-    color: white;
+    color: $white;
   }
 
   &:hover {
