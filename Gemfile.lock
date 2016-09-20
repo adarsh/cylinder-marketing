@@ -94,9 +94,9 @@ GEM
     middleman-search_engine_sitemap (1.4.0)
       builder
       middleman-core (~> 4.0)
-    middleman-sprockets (4.0.0.rc.1)
-      middleman-core (>= 4.0.0.rc.1)
-      sprockets (~> 3.0)
+    middleman-sprockets (4.0.0)
+      middleman-core (~> 4.0)
+      sprockets (>= 3.0)
     minitest (5.9.0)
     neat (1.8.0)
       sass (>= 3.3)
@@ -149,7 +149,7 @@ DEPENDENCIES
   middleman-deploy (= 2.0.0.pre.alpha)
   middleman-livereload (~> 3.4)
   middleman-search_engine_sitemap
-  middleman-sprockets (= 4.0.0.rc.1)
+  middleman-sprockets (~> 4.0.0)
   neat (~> 1.7)
   sassc (~> 1.8)
   slim
