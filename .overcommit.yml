@@ -75,7 +75,7 @@ PreCommit:
     description: 'Analyzing with scss-lint'
     required_library: 'json'
     required_executable: 'scss-lint'
-    flags: ['--format', 'Stats']
+    flags: ['--format', 'JSON']
     install_command: 'gem install scss-lint'
     include: '**/*.scss'
 

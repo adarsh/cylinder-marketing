@@ -82,32 +82,3 @@
 .bumper-item-text {
   margin-bottom: $base-spacing;
 }
-
-.global-footer {
-  background-color: $footer-color;
-  color: $secondary-accent-color;
-  padding: em(50) 0;
-  text-align: center;
-}
-
-.global-footer-items {
-  margin-bottom: em(10);
-}
-
-.global-footer-item {
-  display: inline-block;
-  margin-right: em(20);
-
-  &:last-child {
-    margin-right: 0;
-  }
-
-  &:hover {
-    border-bottom: em(1.5) solid $secondary-accent-color;
-    cursor: pointer;
-  }
-}
-
-
-
-

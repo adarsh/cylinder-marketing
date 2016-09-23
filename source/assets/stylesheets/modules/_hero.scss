@@ -1,27 +1,6 @@
-@include keyframes(hero) {
-  from {
-    @include transform(scale(0));
+$hero-text-color: $white;
 
-    opacity: 0;
-  }
-
-  50% {
-    @include transform(scale(0));
-
-    opacity: 0;
-  }
-
-  82.5% {
-    @include animation-timing-function(ease-out);
-    @include transform(scale(1.03));
-
-    opacity: 1;
-  }
-
-  to {
-    @include transform(scale(1));
-  }
-}
+@import '../animations/hero';
 
 .hero {
   background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
@@ -67,7 +46,7 @@
   }
 
   &:hover {
-    background-color: tint($dark-green, 15%);
+    background-color: tint($light-blue, 15%);
     cursor: pointer;
   }
 }

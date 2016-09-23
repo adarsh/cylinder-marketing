@@ -13,26 +13,31 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
+// Basic Colors
 $white: #fff;
 $black: #000;
 $yellow: #f2d168;
-$light-green: #f3f9e4;
-$dark-green: #4b8c6e;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
 
+// Brand Colors
+$light-blue: #73bdf8;    // colourlovers.com/color/73BDF8/Sweet_Water
+$cylinder-blue: #2a98ff; // colourlovers.com/color/2A98FF/Roller_Disco
+$dark-blue: #0477ba;     // colourlovers.com/color/0477BA/tranquil_waters
+
+$light-gray: #ddd;
+$medium-gray: #999;
+$dark-gray: #333;
+
+// Page Colors
 $base-accent-color: $dark-gray;
 $secondary-accent-color: $light-gray;
-$hero-text-color: white;
-
-$footer-color: $dark-gray;
+$base-background-color: #fff;
 
 // Font Colors
-$base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $dark-green;
-$highlight-background-color: $medium-gray;
+$action-color: $cylinder-blue;
+
+// Hover colors
+$highlight-background-color: $light-blue;
 $highlight-font-color: $white;
 
 // Border
