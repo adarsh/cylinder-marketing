@@ -6,17 +6,15 @@ $hero-text-color: $white;
   background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
 }
 
-.hero-content {
+.hero-container {
   @include animation-name(hero);
   @include animation-duration(0.9s);
 
-  padding: em(180) 0 0;
-  position: relative;
+  padding: 3em 1em 0 0;
 }
 
 .hero-content-text {
   @include span-columns(6);
-  padding: em(50) 0 em(220);
 }
 
 .hero-content-text-title {
@@ -52,33 +50,5 @@ $hero-text-color: $white;
 }
 
 .hero-content-image {
-  bottom: 0;
-  height: 29em;
-  overflow: hidden;
-  position: absolute;
-  right: em(225);
-  width: em(360);
-}
-
-.hero-content-image-background {
-  display: none;
-
-  @include media($large-screen-up) {
-    @include span-columns(6);
-    background-image: image-url('iphone.png');
-    background-repeat: no-repeat;
-    background-size: em(360);
-    float: right;
-    height: 100%;
-    position: absolute;
-    width: em(380);
-
-    .hero-content-image-main {
-      background-image: image-url('iphone-screen.png');
-      background-repeat: no-repeat;
-      height: 100%;
-      margin-left: em(29);
-      margin-top: em(105);
-    }
-  }
+  @include span-columns(6);
 }
