@@ -1,59 +1,25 @@
+.bumper-section {
+  color: $medium-gray;
+  padding: 1em 0;
+}
+
 .section-background {
   background-color: $light-gray;
 }
 
-.bumper-section {
-  color: $medium-gray;
+.bumper-container {
+  display: flex;
+  flex-direction: row;
 }
 
-.bumper-graphic-wrapper,
-.bumper-text-wrapper {
-  padding: 0;
-
-  @include media($medium-screen-up) {
-    // @include span-columns(6 of 12);
-    @include omega(2n);
-    padding: 2em 2em 0;
-  }
-
-  &.-left {
-    @include media($medium-screen-up) {
-      padding-left: 0;
-    }
-  }
-
-  &.-right {
-    @include media($medium-screen-up) {
-      padding-right: 0;
-    }
-  }
+.bumper-text {
+  @include span-columns(8);
 }
 
-.bumper-graphic-wrapper {
-  margin: 0 auto;
-  order: 1;
-  width: 100%;
-
-  @include media($medium-screen-up) {
-    // @include span-columns(6 of 12);
-  }
+.bumper-graphic {
+  @include span-columns(4);
 }
 
-.bumper-graphic-item {
-  padding: 0 em(63);
-}
-
-.bumper-text-wrapper {
-  margin-top: 2em;
-  order: 2;
-  text-align: center;
-
-  @include media($medium-screen-up) {
-    margin-top: 0;
-    text-align: left;
-  }
-}
-
-.bumper-item-text {
-  margin-bottom: $base-spacing;
+.cta-row-container {
+  padding: 1em 0;
 }

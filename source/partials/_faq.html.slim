@@ -1,13 +1,14 @@
 section#faq.bumper-section.section-background
-  .wrap-container.padding-container
-    .bumper-text-wrapper.-left
-      h2.bumper-item-header
-        | Can you help us?
-      p.bumper-item-text
-        |  Yes!
-      p.primary-cta
+  .wrap-container
+    .bumper-container.flex-row.flex-row--separate
+      .bumper-text
+        h3.bumper-text-header
+          | Can you help us?
+        .bumper-text
+          | Yes!
+      .bumper-graphic
+        =image_tag('responsive-screens.png')
+    .cta-row-container
+      .primary-cta
         =link_to('/#contact-us')
           |  Contact Us
-    .bumper-graphic-wrapper.-right
-      img.bumper-graphic-item
-        =image_tag('responsive-screens.png')
