@@ -18,6 +18,7 @@
 
 .bumper-graphic {
   @include span-columns(4);
+  @include omega();
 }
 
 .cta-row-container {
