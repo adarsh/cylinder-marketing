@@ -15,11 +15,16 @@ $hero-text-color: $white;
 
 .hero-content-text {
   @include span-columns(6);
+
+  @include media($medium-screen-up) {
+    @include shift(1);
+    @include span-columns(5);
+  }
 }
 
 .hero-content-text-title {
   color: $hero-text-color;
-  font-size: em(32);
+  font-size: $base-font-size * 1.6;
   font-weight: 400;
   margin: 0 0 em(5);
   text-transform: uppercase;
@@ -27,6 +32,7 @@ $hero-text-color: $white;
 
 .hero-content-text-subtitle {
   color: $hero-text-color;
+  font-size: $base-font-size;
   font-weight: 300;
 }
 
@@ -51,4 +57,8 @@ $hero-text-color: $white;
 
 .hero-content-image {
   @include span-columns(6);
+
+  @include media($medium-screen-up) {
+    @include span-columns(5);
+  }
 }

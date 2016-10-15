@@ -1,22 +1,37 @@
 .global-nav {
   background-color: $light-gray;
-  padding: em(5) 0;
+  font-size: $base-font-size * 0.8;
+  padding: 0.5em 0;
 }
 
-.global-nav-container {
-  flex-direction: row;
+.wrap-container {
+  max-width: none; // Override the normal wrap-container behavior.
+
+  .global-nav-container {
+    flex-direction: row;
+  }
 }
+
 
 .logo {
   @include span-columns(1);
+
+  @include media($medium-screen-up) {
+    @include shift(1);
+    @include span-columns(1);
+  }
 }
 
 .global-nav-items {
-  @include span-columns(9);
+  @include span-columns(11);
   @include omega();
 
   color: $secondary-accent-color;
   text-align: right;
+
+  @include media($medium-screen-up) {
+    @include span-columns(9);
+  }
 }
 
 .global-nav-item {

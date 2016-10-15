@@ -6,6 +6,10 @@ body {
   font-size: $base-font-size;
   -webkit-font-smoothing: antialiased;
   line-height: $base-line-height;
+
+  @include media($medium-screen-up) {
+    font-size: $base-font-size * 1.2;
+  }
 }
 
 h1,
