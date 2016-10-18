@@ -24,7 +24,7 @@ $hero-text-color: $white;
 
 .hero-content-text-title {
   color: $hero-text-color;
-  font-size: $base-font-size * 1.6;
+  font-size: 160%;
   font-weight: 400;
   margin: 0 0 em(5);
   text-transform: uppercase;
@@ -32,7 +32,7 @@ $hero-text-color: $white;
 
 .hero-content-text-subtitle {
   color: $hero-text-color;
-  font-size: $base-font-size;
+  font-size: 100%;
   font-weight: 300;
 }
 
@@ -41,7 +41,7 @@ $hero-text-color: $white;
   border-radius: em(3);
   color: $white;
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 110%;
   font-weight: 500;
   padding: em(5) em(10);
 

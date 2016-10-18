@@ -1,37 +1,38 @@
 section#about
   .wrap-container
     .about-container
-      h3.about-content-title
-        |  Solving your business problems with digital products
-      .about-content-subtitle
-        |  Thoughtful Design and High-Quality Code
       ul.about-block
-        li.about-block-item
-          =image_tag 'clean-code.png',
-            width: '150',
-            height: '150',
-            alt: 'sparkling ruby'
-
-          h5.about-block-title
-            | Clean Code
-          h6.about-block-subtitle
-            | Well-tested, high-quality Ruby and Rails code
-            |  which costs you less to maintain and extend.
 
         li.about-block-item
-          =image_tag('whistle.png', width: '150', height: '150', alt: 'whistle')
-
-          h5.about-block-title
-            |  Coaching
-          h6.about-block-subtitle
-            | Level up your teammmates forever with coaching and mentorship.
+          .about-block-image
+            =image_tag 'clean-code.png',
+              width: '150',
+              height: '150',
+              alt: 'sparkling ruby'
+          h3.about-block-title
+            | Digital Product Design and Development
+          h4.about-block-subtitle
+            | We help you create new growth
+            |  and solve business problems
+            |  using modern product design and development techniques.
 
         li.about-block-item
-          =image_tag('leadership.png', width: '150', height: '150', alt: 'shirt with tie')
+          .about-block-image
+            =image_tag('whistle.png', width: '150', height: '150', alt: 'whistle')
+          h3.about-block-title
+            | Expert Developers To Accelerate Your Work
+          h4.about-block-subtitle
+            | Borrow our Senior Developers to build non-core products,
+            |  clean up your fixer-upper codebase,
+            |  or level-up your team forever with coaching.
 
-          h5.about-block-title
-            | Leadership
-          h6.about-block-subtitle
-            | Get help with system architecture,
-            |  coding best practices,
-            |  and external meetings.
+        li.about-block-item
+          .about-block-image
+            =image_tag('leadership.png', width: '150', height: '150', alt: 'shirt with tie')
+          h3.about-block-title
+            | Solutions to the Developer Hiring Problem
+          h4.about-block-subtitle
+            | Build a stable, long-term pipeline of great colleagues
+            |  by using insightful interviews,
+            |  retaining your best for longer,
+            |  and growing incredible junior teammates.
