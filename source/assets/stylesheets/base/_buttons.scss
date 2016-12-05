@@ -30,3 +30,40 @@ button {
     opacity: 0.5;
   }
 }
+
+.cta {
+  background-color: $white;
+  font-family: $heading-font-family;
+  border-radius: .15em;
+  text-transform: uppercase;
+  color: $base-font-color;
+  display: inline-block;
+  font-size: em(20);
+  letter-spacing: 2px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 1em 1.45em .8em;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    > a{
+      color: $cylinder-blue;
+    }
+  }
+}
+
+.cta--secondary{
+  background-color: $cylinder-blue;
+  color: white;
+  &:hover {
+    background: darken($cylinder-blue, 15%);
+    color: white;
+  }
+}
+
+.cta--large{
+  font-weight: bold;
+  padding: 1.3em 1.45em 1.1em;
+  font-size: em(24);
+}

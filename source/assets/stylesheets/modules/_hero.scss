@@ -1,64 +1,39 @@
 $hero-text-color: $white;
+$hero-img-width: 1560px;
+$hero-img-dark-color: #10589D;
 
 @import '../animations/hero';
 
 .hero {
-  background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
+  background-image: url("/assets/images/intro-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-color: $cylinder-blue;
+  background-repeat: no-repeat;
+  @include media($hero-img-width){
+    background: linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent) right top no-repeat,
+                url("/assets/images/intro-bg.jpg") center center no-repeat,
+                $cylinder-blue;
+    background-size: 50% 100%, auto;
+  }
 }
 
 .hero-container {
   @include animation-name(hero);
-  @include animation-duration(0.9s);
-
-  padding: 3em 1em 0 0;
-}
-
-.hero-content-text {
-  @include span-columns(6);
-
-  @include media($medium-screen-up) {
-    @include shift(1);
-    @include span-columns(5);
+  @include animation-duration(1.3s);
+  @include animation-timing-function(cubic-bezier(.72,.71,.5,1.17));
+  @include media($large-screen-up){
+    padding-top: 10em;
+    padding-bottom: 10em;
   }
 }
 
-.hero-content-text-title {
-  color: $hero-text-color;
-  font-size: 160%;
-  font-weight: 400;
-  margin: 0 0 em(5);
-  text-transform: uppercase;
-}
-
-.hero-content-text-subtitle {
-  color: $hero-text-color;
-  font-size: 100%;
-  font-weight: 300;
-}
-
-.primary-cta {
-  background-color: $action-color;
-  border-radius: em(3);
-  color: $white;
-  display: inline-block;
-  font-size: 110%;
-  font-weight: 500;
-  padding: em(5) em(10);
-
-  a {
-    color: $white;
+.hero-content {
+  @include span-columns(12);
+  @include media($medium-screen-up){
+    @include span-columns(10);
   }
-
-  &:hover {
-    background-color: tint($light-blue, 15%);
-    cursor: pointer;
-  }
-}
-
-.hero-content-image {
-  @include span-columns(6);
-
-  @include media($medium-screen-up) {
-    @include span-columns(5);
+  @include media($large-screen-up){
+    @include span-columns(8);
   }
 }
