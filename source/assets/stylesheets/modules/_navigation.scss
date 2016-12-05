@@ -1,11 +1,11 @@
 .global-nav {
-  background-color: $light-gray;
+  background-color: $white;
   font-size: $base-font-size * 0.8;
   padding: 0.5em 0;
 }
 
 .wrap-container {
-  max-width: none; // Override the normal wrap-container behavior.
+  max-width: 1000px;
 
   .global-nav-container {
     flex-direction: row;
@@ -35,7 +35,6 @@
 }
 
 .global-nav-item {
-  border-radius: $base-border-radius;
   display: inline-block;
   margin-right: em(20);
   padding: 0 em(5);
@@ -45,8 +44,8 @@
   }
 
   &:hover {
-    background: $highlight-background-color;
-    color: $highlight-font-color;
+    border-bottom: 2px solid $cylinder-blue;
+    color: $cylinder-blue;
     cursor: pointer;
   }
 

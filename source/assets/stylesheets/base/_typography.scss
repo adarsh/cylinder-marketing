@@ -1,5 +1,7 @@
+@include font-face('Intro-W01', "../fonts/intro-bold/Intro-W01-Bold", $file-formats: eot ttf svg woff);
+@include font-face('DIN-Medium', "../fonts/din-medium/din-medium-webfont", $file-formats: eot ttf svg woff);
+
 body {
-  @include font-feature-settings('kern', 'liga', 'pnum');
 
   color: $base-font-color;
   font-family: $base-font-family;
