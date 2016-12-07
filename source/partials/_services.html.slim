@@ -1,37 +1,38 @@
-section#about
+section#services
   .wrap-container
-    .about-container
-      ul.about-block
+    .section-header
+      h1.section-title
+        | Services
+    .services-container
+      ul.services-block
 
-        li.about-block-item
-          .about-block-image
-            =image_tag 'clean-code.png',
-              width: '150',
-              height: '150',
-              alt: 'sparkling ruby'
-          h3.about-block-title
+        li.services-block-item
+          .services-block-image
+            =image_tag 'clean-code.svg',
+              alt: 'computer'
+          h3.services-block-title
             | Digital Product Design and Development
-          h4.about-block-subtitle
+          p.services-block-subtitle
             | We help you create new growth
             |  and solve business problems
             |  using modern product design and development techniques.
 
-        li.about-block-item
-          .about-block-image
-            =image_tag('whistle.png', width: '150', height: '150', alt: 'whistle')
-          h3.about-block-title
+        li.services-block-item
+          .services-block-image
+            =image_tag('fast.svg', alt: 'fast')
+          h3.services-block-title
             | Expert Developers To Accelerate Your Work
-          h4.about-block-subtitle
+          p.services-block-subtitle
             | Borrow our Senior Developers to build non-core products,
             |  clean up your fixer-upper codebase,
             |  or level-up your team forever with coaching.
 
-        li.about-block-item
-          .about-block-image
-            =image_tag('leadership.png', width: '150', height: '150', alt: 'shirt with tie')
-          h3.about-block-title
+        li.services-block-item
+          .services-block-image
+            =image_tag('hiring.svg', alt: 'hiring')
+          h3.services-block-title
             | Improve Your Technical Hiring
-          h4.about-block-subtitle
+          p.services-block-subtitle
             | Build an amazing team
             |  by getting better candidates,
             |  improving interviews,

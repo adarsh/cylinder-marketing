@@ -1,0 +1,26 @@
+.people {
+  height: 0;
+  padding: 0;
+  padding-bottom: 30%;
+  background-image: url("/assets/images/people-bg.jpg");
+  background-position: center center;
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.people-content-text {
+  @include span-columns(6);
+  position: absolute;
+  top: 30%;
+}
+.people-content-text-title {
+  color: white;
+  font-size: 5.8em;
+  margin: 0;
+}
+.people-content-text-paragraph {
+  color: white;
+  font-size: 1.8em;
+  line-height: 1.8;
+}

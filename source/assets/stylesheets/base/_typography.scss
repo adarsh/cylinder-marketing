@@ -10,7 +10,7 @@ body {
   line-height: $base-line-height;
 
   @include media($medium-screen-up) {
-    font-size: $base-font-size * 1.2;
+    font-size: $base-font-size;
   }
 }
 

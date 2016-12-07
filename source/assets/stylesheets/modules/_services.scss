@@ -1,8 +1,7 @@
-.about-container {
+.services-container {
   color: $medium-gray;
   font-size: 90%;
-  padding: 1em;
-  text-align: center;
+  margin-bottom: 3em;
 
   @include media($medium-screen-up) {
     font-size: 110%;
@@ -13,32 +12,32 @@
   }
 }
 
-.about-content-title {
+.services-content-title {
   @include span-columns(12);
 
   font-weight: bold;
 }
 
-.about-content-subtitle {
+.services-content-subtitle {
   @include span-columns(12);
   margin-bottom: 1em;
 }
 
-.about-block-item {
+.services-block {
+  display: inline-block;
+}
+
+.services-block-item {
   @include span-columns(12);
   padding: 0.5em 0;
 
-  &:last-child {
-    padding: 1em;
-  }
-
   // medium-screen-up must come before large-screen-up
   @include media($medium-screen-up) {
-    @include shift(2);
-    @include span-columns(8);
+    @include shift(3);
+    @include span-columns(7);
     @include omega();
 
-    padding: 1.5em 1em;
+    padding: 1.5em 0em;
   }
 
   @include media($large-screen-up) {
@@ -46,16 +45,24 @@
     @include span-columns(4);
     @include omega(3n);
 
-    padding: 1.5em 1em;
+    padding: 1.5em 0em;
   }
 }
 
-.about-block-title {
-  color: $cylinder-blue;
-  font-weight: bold;
-  margin: 0.25em;
+.services-block-image {
+  width: 15%;
+  margin: 2em 0;
 }
 
-.about-block-subtitle {
+.services-block-title {
+  color: $cylinder-blue;
+  font-weight: bold;
+  font-size: 2.2em;
+  line-height: 1.5;
+}
+
+.services-block-subtitle {
   color: $dark-gray;
+  font-size: 1.4em;
+  line-height: 1.8;
 }

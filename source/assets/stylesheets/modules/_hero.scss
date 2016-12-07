@@ -3,7 +3,14 @@ $hero-text-color: $white;
 @import '../animations/hero';
 
 .hero {
-  background: linear-gradient(shade($base-accent-color, 10%), tint($base-accent-color, 50%));
+  height: 0;
+  padding: 0;
+  padding-bottom: 46%;
+  background-image: url("/assets/images/intro-bg.jpg");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .hero-container {
@@ -15,16 +22,13 @@ $hero-text-color: $white;
 
 .hero-content-text {
   @include span-columns(6);
-
-  @include media($medium-screen-up) {
-    @include shift(1);
-    @include span-columns(5);
-  }
+  position: absolute;
+  top: 30%;
 }
 
 .hero-content-text-title {
   color: $hero-text-color;
-  font-size: 160%;
+  font-size: 5.8em;
   font-weight: 400;
   margin: 0 0 em(5);
   text-transform: uppercase;
@@ -37,16 +41,18 @@ $hero-text-color: $white;
 }
 
 .primary-cta {
-  background-color: $action-color;
-  border-radius: em(3);
-  color: $white;
+  background-color: $white;
+  font-family: "Intro-W01", sans-serif;
+  border-radius: .15em;
+  text-transform: uppercase;
+  color: black;
   display: inline-block;
-  font-size: 110%;
+  font-size: 2em;
   font-weight: 500;
-  padding: em(5) em(10);
+  padding: 0.45em 1.45em;
 
   a {
-    color: $white;
+    color: black;
   }
 
   &:hover {

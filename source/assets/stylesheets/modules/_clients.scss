@@ -1,0 +1,69 @@
+.clients-container {
+  color: $medium-gray;
+  font-size: 90%;
+  margin-bottom: 3em;
+
+  @include media($medium-screen-up) {
+    font-size: 110%;
+  }
+
+  @include media($large-screen-up) {
+    font-size: 100%;
+  }
+}
+
+.clients-content-title {
+  @include span-columns(12);
+
+  font-weight: bold;
+}
+
+.clients-content-subtitle {
+  @include span-columns(12);
+  margin-bottom: 1em;
+}
+
+.clients-block {
+  display: inline-block;
+  width: 100%;
+}
+
+.clients-block-item {
+  @include span-columns(12);
+  padding: 0.5em 0;
+
+  // medium-screen-up must come before large-screen-up
+  @include media($medium-screen-up) {
+    @include shift(3);
+    @include span-columns(7);
+    @include omega();
+
+    padding: 1.5em 0em;
+  }
+
+  @include media($large-screen-up) {
+    @include shift(0); // Must reset the shift if we add one in the above query.
+    @include span-columns(3);
+    @include omega(4n);
+
+    padding: 1.5em 0em;
+  }
+}
+
+.clients-block-image {
+  width: 100%;
+  margin: 2em 0;
+}
+
+.clients-block-title {
+  color: $cylinder-blue;
+  font-weight: bold;
+  font-size: 2.2em;
+  line-height: 1.5;
+}
+
+.clients-block-subtitle {
+  color: $dark-gray;
+  font-size: 1.4em;
+  line-height: 1.8;
+}

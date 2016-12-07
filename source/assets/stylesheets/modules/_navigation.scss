@@ -1,7 +1,8 @@
 .global-nav {
   background-color: $white;
-  font-size: $base-font-size * 0.8;
-  padding: 0.5em 0;
+  font-size: 1.8em;
+  padding: 1.5em 0;
+  border-bottom: em(2) solid lighten($cylinder-blue, 20%);
 }
 
 .wrap-container {
@@ -17,8 +18,7 @@
   @include span-columns(1);
 
   @include media($medium-screen-up) {
-    @include shift(1);
-    @include span-columns(1);
+    @include span-columns(2);
   }
 }
 
@@ -38,13 +38,14 @@
   display: inline-block;
   margin-right: em(20);
   padding: 0 em(5);
+  border-bottom: em(3) solid transparent;
 
   &:last-child {
     margin-right: 0;
   }
 
   &:hover {
-    border-bottom: 2px solid $cylinder-blue;
+    border-bottom: em(3) solid $cylinder-blue;
     color: $cylinder-blue;
     cursor: pointer;
   }
@@ -52,8 +53,4 @@
   a {
     color: $dark-gray;
   }
-}
-
-.global-nav-cta {
-  border: em(1.5) solid $base-accent-color;
 }
