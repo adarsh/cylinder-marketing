@@ -2,25 +2,52 @@ $footer-color: $dark-gray;
 
 .global-footer {
   background-color: $footer-color;
-  color: $secondary-accent-color;
+  @include linear-gradient(50deg, #5D6474, #3B424F);
   padding: em(50) 0;
-  text-align: center;
+  border-top: 1px solid darken($cylinder-blue, 20%);
 }
 
-.global-footer-items {
-  margin-bottom: em(10);
-}
-
-.global-footer-item {
+.credits {
+  font-size: 1.4em;
   display: inline-block;
-  margin-right: em(20);
+  line-height: 40px;
+  color: white;
+  @include span-columns(6);
+}
 
-  &:last-child {
-    margin-right: 0;
+.social-footer {
+  display: inline-block;
+  @include span-columns(6);
+  text-align: right;
+
+  li {
+    border-radius: 100%;
+    display: inline-block;
   }
 
-  &:hover {
-    border-bottom: em(1.5) solid $secondary-accent-color;
-    cursor: pointer;
+  .social-link {
+    padding: 0 0;
+    margin-left: 1em;
+    line-height: 4.6em;
+    border-radius: 50%;
+    border: 1px solid $cylinder-blue;
+    width: 4em;
+    height: 4em;
+    opacity: .7;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 1.7em;
+      color: white;
+    }
   }
 }

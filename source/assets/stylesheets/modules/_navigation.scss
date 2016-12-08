@@ -1,8 +1,11 @@
 .global-nav {
-  background-color: $white;
-  font-size: 1.8em;
-  padding: 1.5em 0;
-  border-bottom: em(2) solid lighten($cylinder-blue, 20%);
+  background-color: #fff;
+  font-size: 1.6em;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0px 2px 22px transparentize($cylinder-blue, .85);
+  padding: 1.3em 0 1em;
 }
 
 .wrap-container {

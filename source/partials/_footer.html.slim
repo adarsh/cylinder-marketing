@@ -1,17 +1,17 @@
 footer.global-footer
   .wrap-container
-    ul.global-footer-items
-      li.global-footer-item
-        =link_to('/#about')
-          | about
-      li.global-footer-item
-        =link_to('/#faq')
-          | faq
-      li.global-footer-item
-        =link_to('/#contact-us')
-          | contact us
-      li.global-footer-item
-        =link_to('https://github.com/adarsh/cylinder-marketing')
-          | source code
-    div
+    .credits
       | © #{ Time.now.year } Adarsh Pandit Consulting, Inc.
+    ul.social-footer
+      li.facebook
+        a.social-link
+          i.fa-facebook.fa
+      li.twitter
+        a.social-link
+          i.fa-twitter.fa
+      li.medium
+        a.social-link
+          i.fa-medium.fa
+      li.github
+        a.social-link
+          i.fa-github.fa

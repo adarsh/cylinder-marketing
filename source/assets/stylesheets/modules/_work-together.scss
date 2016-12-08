@@ -1,0 +1,37 @@
+.work-together {
+  height: 0;
+  padding: 0;
+  padding-bottom: 30%;
+  @include linear-gradient(50deg, #434343, #3B424F);
+  background-position: center center;
+  background-size: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.work-together-content-text {
+  @include span-columns(6);
+  padding-top: 6em;
+  position: relative;
+}
+.work-together-content-text-title {
+  color: white;
+  font-size: 5.8em;
+  margin: 0;
+}
+.work-together-content-text-paragraph {
+  color: white;
+  font-size: 1.8em;
+  line-height: 1.8;
+}
+.work-together-cta.primary-cta {
+  display: inline-block;
+  float: right;
+  width: 20%;
+  background: $cylinder-blue;
+  margin-top: 8em;
+
+  a {
+    color: white;
+  }
+}

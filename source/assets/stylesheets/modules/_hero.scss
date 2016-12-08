@@ -21,7 +21,7 @@ $hero-text-color: $white;
 }
 
 .hero-content-text {
-  @include span-columns(6);
+  @include span-columns(7);
   position: absolute;
   top: 30%;
 }

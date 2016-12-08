@@ -1,7 +1,7 @@
 .clients-container {
-  color: $medium-gray;
+  color: $base-accent-color;
   font-size: 90%;
-  margin-bottom: 3em;
+  margin-bottom: 8em;
 
   @include media($medium-screen-up) {
     font-size: 110%;
@@ -66,4 +66,42 @@
   color: $dark-gray;
   font-size: 1.4em;
   line-height: 1.8;
+}
+
+.reviews {
+  display: inline-block;
+}
+
+.review {
+  @include span-columns(6);
+  display: inline-block;
+
+  &-text {
+    font-size: 1.8em;
+    line-height: 1.7;
+    display: block;
+  }
+
+  &-person {
+  display: block;
+  padding-top: 2em;
+  }
+
+  &-picture {
+    display: inline-block;
+    max-width: 3.4em;
+    img {
+      border-radius: 100%;
+    }
+  }
+
+  &-name {
+    display: inline-block;
+    font-size: 1.4em;
+    padding-left: 1em;
+
+    &-position{
+      display: block;
+    }
+  }
 }
