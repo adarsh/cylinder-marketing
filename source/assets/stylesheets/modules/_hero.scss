@@ -42,22 +42,26 @@ $hero-text-color: $white;
 
 .primary-cta {
   background-color: $white;
-  font-family: "Intro-W01", sans-serif;
+  font-family: "Intro-W01 Regular", sans-serif;
   border-radius: .15em;
   text-transform: uppercase;
-  color: black;
+  color: $base-font-color;
   display: inline-block;
   font-size: 2em;
+  letter-spacing: 2px;
   font-weight: 500;
-  padding: 0.45em 1.45em;
+  line-height: initial;
+  padding: 0.8em 1.45em;
 
   a {
     color: black;
   }
 
   &:hover {
-    background-color: tint($light-blue, 15%);
     cursor: pointer;
+    > a{
+      color: $cylinder-blue;
+    }
   }
 }
 

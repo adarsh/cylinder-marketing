@@ -27,11 +27,19 @@
 .work-together-cta.primary-cta {
   display: inline-block;
   float: right;
-  width: 20%;
+  width: auto;
   background: $cylinder-blue;
   margin-top: 8em;
 
   a {
     color: white;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: darken($cylinder-blue, 15%);
+    > a{
+      color: white;
+    }
   }
 }
