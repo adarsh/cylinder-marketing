@@ -84,3 +84,17 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+.hero-size{
+  font-size: em(28);
+  color: $white;
+  font-weight: 400;
+  margin: 0 0 em(5);
+  text-transform: uppercase;
+  @include media($medium-screen-up){
+    font-size: em(38);
+  }
+  @include media($large-screen-up){
+    font-size: em(58);
+  }
+}

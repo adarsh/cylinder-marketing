@@ -3,35 +3,31 @@ $hero-text-color: $white;
 @import '../animations/hero';
 
 .hero {
-  height: 0;
-  padding: 0;
-  padding-bottom: 46%;
   background-image: url("/assets/images/intro-bg.jpg");
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
 .hero-container {
-  @include animation-name(hero);
-  @include animation-duration(0.9s);
+//  @include animation-name(hero);
+//  @include animation-duration(0.9s);
 
-  padding: 3em 1em 0 0;
+  @include media($large-screen-up){
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
 }
 
 .hero-content-text {
-  @include span-columns(7);
-  position: absolute;
-  top: 30%;
-}
-
-.hero-content-text-title {
-  color: $hero-text-color;
-  font-size: 5.8em;
-  font-weight: 400;
-  margin: 0 0 em(5);
-  text-transform: uppercase;
+  @include span-columns(10);
+  @include media($medium-screen-up){
+    @include span-columns(8);
+  }
+  @include media($large-screen-up){
+    @include span-columns(9);
+  }
 }
 
 .hero-content-text-subtitle {
@@ -47,7 +43,7 @@ $hero-text-color: $white;
   text-transform: uppercase;
   color: $base-font-color;
   display: inline-block;
-  font-size: 2em;
+  font-size: em(20);
   letter-spacing: 2px;
   font-weight: 500;
   line-height: initial;
@@ -62,13 +58,5 @@ $hero-text-color: $white;
     > a{
       color: $cylinder-blue;
     }
-  }
-}
-
-.hero-content-image {
-  @include span-columns(6);
-
-  @include media($medium-screen-up) {
-    @include span-columns(5);
   }
 }

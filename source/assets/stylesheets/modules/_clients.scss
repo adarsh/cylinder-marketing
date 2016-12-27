@@ -1,7 +1,7 @@
 .clients-container {
   color: $base-accent-color;
   font-size: 90%;
-  margin-bottom: 8em;
+  margin-bottom: em(80);
 
   @include media($medium-screen-up) {
     font-size: 110%;
@@ -29,23 +29,15 @@
 }
 
 .clients-block-item {
-  @include span-columns(12);
+  @include span-columns(6);
   padding: 0.5em 0;
-
-  // medium-screen-up must come before large-screen-up
-  @include media($medium-screen-up) {
-    @include shift(3);
-    @include span-columns(7);
-    @include omega();
-
-    padding: 1.5em 0em;
+  @include media($medium-screen-down) {
+    @include omega(2n);
   }
 
-  @include media($large-screen-up) {
-    @include shift(0); // Must reset the shift if we add one in the above query.
+  @include media($medium-screen-up) {
     @include span-columns(3);
     @include omega(4n);
-
     padding: 1.5em 0em;
   }
 }
@@ -58,33 +50,35 @@
 .clients-block-title {
   color: $cylinder-blue;
   font-weight: bold;
-  font-size: 2.2em;
+  font-size: em(22);
   line-height: 1.5;
 }
 
 .clients-block-subtitle {
   color: $dark-gray;
-  font-size: 1.4em;
+  font-size: em(14);
   line-height: 1.8;
 }
 
 .reviews {
-  display: inline-block;
+  @include clearfix;
 }
 
 .review {
-  @include span-columns(6);
-  display: inline-block;
+  margin-bottom: em(40);
+  @include media($medium-screen-up){
+    @include span-columns(6);
+  }
 
   &-text {
-    font-size: 1.8em;
+    font-size: em(18);
     line-height: 1.7;
     display: block;
   }
 
   &-person {
   display: block;
-  padding-top: 2em;
+  padding-top: em(20);
   }
 
   &-picture {
@@ -97,7 +91,7 @@
 
   &-name {
     display: inline-block;
-    font-size: 1.4em;
+    font-size: em(14);
     padding-left: 1em;
 
     &-position{

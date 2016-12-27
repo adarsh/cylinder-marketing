@@ -1,0 +1,5 @@
+.billboard-container{
+  padding-top: 6em;
+  padding-bottom: 6em;
+  @include outer-container;
+}

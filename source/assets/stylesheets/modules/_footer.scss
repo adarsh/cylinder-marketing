@@ -8,17 +8,22 @@ $footer-color: $dark-gray;
 }
 
 .credits {
-  font-size: 1.4em;
+  font-size: em(14);
   display: inline-block;
   line-height: 40px;
   color: white;
-  @include span-columns(6);
+  @include media($medium-screen-up){
+    @include span-columns(6);
+  }
 }
+
 
 .social-footer {
   display: inline-block;
-  @include span-columns(6);
   text-align: right;
+  @include media($medium-screen-up){
+    @include span-columns(6);
+  }
 
   li {
     border-radius: 100%;
@@ -28,11 +33,11 @@ $footer-color: $dark-gray;
   .social-link {
     padding: 0 0;
     margin-left: 1em;
-    line-height: 4.6em;
+    line-height: em(46);
     border-radius: 50%;
     border: 1px solid $cylinder-blue;
-    width: 4em;
-    height: 4em;
+    width: em(40);
+    height: em(40);
     opacity: .7;
     display: inline-block;
     margin-bottom: 0;
@@ -46,7 +51,7 @@ $footer-color: $dark-gray;
     }
 
     i {
-      font-size: 1.7em;
+      font-size: em(17);
       color: white;
     }
   }
