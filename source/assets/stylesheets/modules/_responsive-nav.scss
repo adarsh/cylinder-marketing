@@ -3,14 +3,15 @@
   clear: both;
 }
 
-.js .nav-collapse {
-  clip: rect(0 0 0 0);
-  position: absolute;
-  display: block;
-  overflow: hidden;
-  zoom: 1;
+@include media($large-screen-down){
+  .js .nav-collapse {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+  }
 }
-
 .nav-collapse.opened {
   max-height: 9999px;
 }
@@ -29,7 +30,7 @@
   user-select: none;
 }
 
-@include media($medium-screen-up){
+@include media($large-screen-up){
   .js .nav-collapse {
     position: relative;
   }
@@ -41,13 +42,6 @@
   }
 }
 
-header {
-  position: fixed;
-  z-index: 3;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
 
 .mask {
   -webkit-transition: opacity 300ms;
@@ -88,19 +82,14 @@ header {
   top: 0;
 }
 
-@include media($medium-screen-up){
+@include media($large-screen-up){
   .nav-collapse {
     float: right;
     width: auto;
   }
 }
 
-.nav-collapse li {
-  float: left;
-  width: 100%;
-}
-
-@include media($medium-screen-up){
+@include media($large-screen-up){
   .nav-collapse li {
     width: auto;
   }
@@ -112,6 +101,7 @@ header {
 
 .nav-toggle {
   float: right;
+  margin-top: 3px;
   span{
     @include burger(25px, 3px, 5px, grey);
   }

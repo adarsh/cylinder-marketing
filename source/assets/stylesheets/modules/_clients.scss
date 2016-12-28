@@ -1,10 +1,9 @@
 .clients-container {
-  color: $base-accent-color;
-  font-size: 90%;
-  margin-bottom: em(80);
+  padding: 5em 0;
 
   @include media($medium-screen-up) {
     font-size: 110%;
+    padding: 8em 0;
   }
 
   @include media($large-screen-up) {
@@ -28,23 +27,19 @@
   width: 100%;
 }
 
-.clients-block-item {
+.clients-block__item {
   @include span-columns(6);
-  padding: 0.5em 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   @include media($medium-screen-down) {
     @include omega(2n);
   }
-
   @include media($medium-screen-up) {
     @include span-columns(3);
     @include omega(4n);
-    padding: 1.5em 0em;
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
   }
-}
-
-.clients-block-image {
-  width: 100%;
-  margin: 2em 0;
 }
 
 .clients-block-title {
@@ -68,6 +63,7 @@
   margin-bottom: em(40);
   @include media($medium-screen-up){
     @include span-columns(6);
+    margin-bottom: 0;
   }
 
   &-text {
@@ -77,15 +73,16 @@
   }
 
   &-person {
-  display: block;
-  padding-top: em(20);
+    padding-top: em(20);
+    display: flex;
+    align-items: center;
   }
 
   &-picture {
-    display: inline-block;
     max-width: 3.4em;
     img {
       border-radius: 100%;
+      display: block;
     }
   }
 

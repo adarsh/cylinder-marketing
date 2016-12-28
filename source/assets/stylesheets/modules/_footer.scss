@@ -2,57 +2,65 @@ $footer-color: $dark-gray;
 
 .global-footer {
   background-color: $footer-color;
+  color: white;
   @include linear-gradient(50deg, #5D6474, #3B424F);
-  padding: em(50) 0;
+  padding: 2em 0;
   border-top: 1px solid darken($cylinder-blue, 20%);
+  @include media($medium-screen-up){
+    padding: 3em 0;
+  }
+}
+
+.global-footer__container{
+  @include media($medium-screen-up){
+    display: flex;
+    align-items: center;
+  }
 }
 
 .credits {
   font-size: em(14);
-  display: inline-block;
-  line-height: 40px;
-  color: white;
+  display: block;
+  margin-bottom: 1rem;
   @include media($medium-screen-up){
     @include span-columns(6);
+    margin-bottom: 0;
   }
 }
 
 
-.social-footer {
+.social {
   display: inline-block;
   text-align: right;
   @include media($medium-screen-up){
     @include span-columns(6);
   }
-
   li {
-    border-radius: 100%;
+    margin-right: 1em;
     display: inline-block;
+    &:last-child{
+      margin-right: 0;
+    }
   }
+}
 
-  .social-link {
-    padding: 0 0;
-    margin-left: 1em;
-    line-height: em(46);
-    border-radius: 50%;
-    border: 1px solid $cylinder-blue;
-    width: em(40);
-    height: em(40);
-    opacity: .7;
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-
-    &:hover {
-      opacity: 1;
-      cursor: pointer;
-    }
-
-    i {
-      font-size: em(17);
-      color: white;
-    }
+.social__link {
+  display: block;
+  padding: .65em 0;
+  line-height: 1;
+  border-radius: 50%;
+  border: 1px solid $cylinder-blue;
+  width: em(40);
+  height: em(40);
+  opacity: .7;
+  text-align: center;
+  vertical-align: middle;
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  i {
+    font-size: em(17);
+    color: white;
   }
 }

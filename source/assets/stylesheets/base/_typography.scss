@@ -86,15 +86,23 @@ picture {
 }
 
 .hero-size{
-  font-size: em(28);
+  font-size: em(32);
   color: $white;
   font-weight: 400;
   margin: 0 0 em(5);
   text-transform: uppercase;
   @include media($medium-screen-up){
-    font-size: em(38);
+    font-size: em(48);
   }
   @include media($large-screen-up){
     font-size: em(58);
   }
+}
+
+.section-title {
+  text-transform: uppercase;
+  padding: .5rem 0 .3rem 1rem;
+  border-left: 4px solid $cylinder-blue;
+  font-size: em(25);
+  position: relative;
 }

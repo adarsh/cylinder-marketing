@@ -7,15 +7,16 @@
 }
 
 .people-content-text {
+  color: white;
+  font-size: em(18);
+  line-height: 1.8;
+  & :last-child{
+    margin-bottom: 0;
+  }
   @include media($medium-screen-up){
     @include span-columns(6);
   }
 }
 .people-content-text-title {
   margin: 0;
-}
-.people-content-text-paragraph {
-  color: white;
-  font-size: em(18);
-  line-height: 1.8;
 }

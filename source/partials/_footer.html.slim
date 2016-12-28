@@ -1,17 +1,17 @@
 footer.global-footer
-  .wrap-container
-    .credits
+  .wrap-container.global-footer__container
+    small.credits
       | © #{ Time.now.year } Adarsh Pandit Consulting, Inc.
-    ul.social-footer
-      li.facebook
-        a.social-link
+    ul.social
+      li
+        =link_to('', class: 'social__link')
           i.fa-facebook.fa
-      li.twitter
-        a.social-link
+      li
+        =link_to('', class: 'social__link')
           i.fa-twitter.fa
-      li.medium
-        a.social-link
+      li
+        =link_to('', class: 'social__link')
           i.fa-medium.fa
-      li.github
-        a.social-link
+      li
+        =link_to('', class: 'social__link')
           i.fa-github.fa

@@ -1,5 +1,15 @@
 .billboard-container{
-  padding-top: 6em;
-  padding-bottom: 6em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  @include outer-container;
+  @include media($medium-screen-up){
+    padding-top: 6em;
+    padding-bottom: 6em;
+  }
+}
+
+.poster{
+  padding-top: 4em;
+  padding-bottom: 4em;
   @include outer-container;
 }

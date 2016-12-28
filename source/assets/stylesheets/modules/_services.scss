@@ -1,10 +1,9 @@
 .services-container {
-  color: $medium-gray;
-  font-size: 90%;
-  margin-bottom: 8em;
+  padding: 5em 0;
 
   @include media($medium-screen-up) {
     font-size: 110%;
+    padding: 8em 0;
   }
 
   @include media($large-screen-up) {
@@ -30,13 +29,14 @@
 .services-block-item {
   @include span-columns(12);
   padding: 0;
+  margin-bottom: 2rem;
 
   // medium-screen-up must come before large-screen-up
   @include media($medium-screen-up) {
     @include shift(3);
     @include span-columns(7);
     @include omega();
-
+    margin-bottom: 0;
     padding: 1.5em 0em;
   }
 

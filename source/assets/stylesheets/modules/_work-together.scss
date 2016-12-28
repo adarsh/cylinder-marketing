@@ -4,40 +4,36 @@
   background-size: 100%;
   position: relative;
   background-repeat: no-repeat;
+  .poster{
+    @include media($medium-screen-up){
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 .work-together-content-text {
-  @include media($medium-screen-up){
-    @include span-columns(6);
-  }
-  position: relative;
-}
-.work-together-content-text-title {
-  margin: 0;
-}
-.work-together-content-text-paragraph {
   color: white;
   font-size: em(18);
   line-height: 1.8;
-}
-.work-together-cta.primary-cta {
-  display: inline-block;
-  width: auto;
-  background: $cylinder-blue;
   @include media($medium-screen-up){
-    float: right;
-    margin-top: 8em;
+    @include span-columns(7);
   }
-
-  a {
-    color: white;
+  @include media($large-screen-up){
+    @include span-columns(6);
   }
+}
 
-  &:hover {
-    cursor: pointer;
-    background: darken($cylinder-blue, 15%);
-    > a{
-      color: white;
+
+.work-together-cta{
+  @include media($medium-screen-up){
+    @include span-columns(5);
+    .cta{
+      width: 100%;
     }
+  }
+  @include media($large-screen-up){
+    @include span-columns(4);
+    @include shift(2);
   }
 }

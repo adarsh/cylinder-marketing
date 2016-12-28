@@ -1,12 +1,10 @@
-section#contact-us
-  .work-together
-    .wrap-container
-      .billboard-container
-        .work-together-content-text
-          h1.hero-size.work-together-content-text-title
-            | LET'S WORK TOGETHER
-          p.work-together-content-text-paragraph
-            |  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        .primary-cta.work-together-cta
-          =link_to('/#contact-us')
-            |  Contact Us
+section#contact-us.work-together
+  .wrap-container.poster
+    .work-together-content-text
+      h1.hero-size
+        | LET'S WORK TOGETHER
+      p
+        |  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .work-together-cta
+      =link_to('/#contact-us', class: 'cta cta--secondary cta--large')
+        |  Contact Us
