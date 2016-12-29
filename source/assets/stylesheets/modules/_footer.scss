@@ -28,40 +28,13 @@ $footer-color: $dark-gray;
   }
 }
 
-
-.social {
+.footer__social {
   display: inline-block;
   text-align: right;
   @include media($medium-screen-up){
     @include span-columns(6);
   }
-}
-
-.social__item {
-  margin-right: 1em;
-  display: inline-block;
-  &:last-child{
-    margin-right: 0;
-  }
-}
-
-.social__link {
-  display: block;
-  padding: .65em 0;
-  line-height: 1;
-  border-radius: 50%;
-  border: 1px solid $cylinder-blue;
-  width: em(40);
-  height: em(40);
-  opacity: .7;
-  text-align: center;
-  vertical-align: middle;
-  &:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
-  i {
-    font-size: em(17);
-    color: white;
+  .social__link{
+    color: rgba($white, .7);
   }
 }
