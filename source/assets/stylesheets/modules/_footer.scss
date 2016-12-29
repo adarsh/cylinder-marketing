@@ -4,10 +4,10 @@ $footer-color: $dark-gray;
   background-color: $footer-color;
   color: white;
   @include linear-gradient(50deg, #5D6474, #3B424F);
-  padding: 2em 0;
+  padding: 2rem 0;
   border-top: 1px solid darken($cylinder-blue, 20%);
   @include media($medium-screen-up){
-    padding: 3em 0;
+    padding: 3rem 0;
   }
 }
 
@@ -19,7 +19,7 @@ $footer-color: $dark-gray;
 }
 
 .credits {
-  font-size: em(14);
+  font-size: $base-font-size;
   display: block;
   margin-bottom: 1rem;
   @include media($medium-screen-up){
@@ -35,12 +35,13 @@ $footer-color: $dark-gray;
   @include media($medium-screen-up){
     @include span-columns(6);
   }
-  li {
-    margin-right: 1em;
-    display: inline-block;
-    &:last-child{
-      margin-right: 0;
-    }
+}
+
+.social__item {
+  margin-right: 1em;
+  display: inline-block;
+  &:last-child{
+    margin-right: 0;
   }
 }
 

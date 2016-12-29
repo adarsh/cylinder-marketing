@@ -1,24 +1,11 @@
 @include keyframes(hero) {
-  from {
+  from,
+  50%{
     @include transform(scale(0));
-
     opacity: 0;
   }
-
-  50% {
-    @include transform(scale(0));
-
-    opacity: 0;
-  }
-
-  82.5% {
-    @include animation-timing-function(ease-out);
-    @include transform(scale(1.03));
-
-    opacity: 1;
-  }
-
   to {
     @include transform(scale(1));
+    opacity: 1;
   }
 }

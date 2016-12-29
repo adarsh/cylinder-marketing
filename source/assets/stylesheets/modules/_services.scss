@@ -1,78 +1,53 @@
-.services-container {
-  padding: 5em 0;
+$digital: $cylinder-blue;
+$accelerate: #69C61A;
+$hiring: #FF2A76;
 
-  @include media($medium-screen-up) {
-    font-size: 110%;
-    padding: 8em 0;
-  }
-
-  @include media($large-screen-up) {
-    font-size: 100%;
+.services__items{
+  margin-top: 3rem;
+  @include media($medium-screen-up){
+    margin-top: 5rem;
   }
 }
 
-.services-content-title {
-  @include span-columns(12);
-
-  font-weight: bold;
-}
-
-.services-content-subtitle {
-  @include span-columns(12);
-  margin-bottom: 1em;
-}
-
-.services-block-items {
-  display: inline-block;
-}
-
-.services-block-item {
+.services__item {
   @include span-columns(12);
   padding: 0;
   margin-bottom: 2rem;
+  line-height: 1.8;
+  &:last-child{
+    margin-bottom: 0;
+  }
 
-  // medium-screen-up must come before large-screen-up
   @include media($medium-screen-up) {
     @include shift(3);
     @include span-columns(7);
-    @include omega();
-    margin-bottom: 0;
-    padding: 1.5em 0em;
+    margin-bottom: 1.5rem;
   }
 
   @include media($large-screen-up) {
     @include shift(0); // Must reset the shift if we add one in the above query.
     @include span-columns(4);
     @include omega(3n);
-
-    padding: 1.5em 0em;
+    margin-bottom: 0;
   }
 }
 
-.services-block-image {
+.services__icon {
   width: 15%;
-  margin: 20px 0;
+  margin-bottom: 1.5rem;
 }
 
-.services-block-title {
-  color: $cylinder-blue;
+.services__title {
   font-weight: normal;
-  font-size: em(20);
+  font-size: em(22);
   line-height: 1.3;
-
-  &--green {
-    @extend .services-block-title;
-    color: #69C61A;
+  .services__item--digital & {
+    color: $digital;
   }
-
-  &--red {
-    @extend .services-block-title;
-    color: #FF2A76;
+  .services__item--accelerate & {
+    color: $accelerate;
   }
-}
-
-.services-block-subtitle {
-  color: $dark-gray;
-  font-size: em(14);
-  line-height: 1.8;
+  .services__item--hiring & {
+    color: $hiring;
+  }
 }

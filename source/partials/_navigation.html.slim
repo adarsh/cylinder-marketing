@@ -1,29 +1,26 @@
 nav.global-nav
-  .wrap-container
-    .global-nav-container
-      .logo
-        =link_to('/')
-          =image_tag('cylinder-logo.svg')
-      .global-nav-items.nav-collapse
-        ul
-          li.global-nav-item
-            =link_to('/#home')
-              | Home
-          li.global-nav-item
-            =link_to('/#services')
-              | Services
-          li.global-nav-item
-            =link_to('/#clients')
-              | Clients
-          li.global-nav-item
-            =link_to('/porfolio')
-              | Portfolio
-          li.global-nav-item
-            =link_to('/team')
-              | Team
-          li.global-nav-item
-            =link_to('https://medium.com/cylinder-blog')
-              | Blog
-          li.global-nav-item
-            =link_to('/#contact-us')
-              | Contact
+  .wrap-container.global-nav__container
+    =link_to('/', class: 'logo')
+      =image_tag('cylinder-logo.svg')
+    ul.global-nav__items.nav-collapse
+      li.global-nav__item.active
+        =link_to('#home', 'data-scroll' => '')
+          | Home
+      li.global-nav__item
+        =link_to('#services', 'data-scroll' => '')
+          | Services
+      li.global-nav__item
+        =link_to('#clients', 'data-scroll' => '')
+          | Clients
+      li.global-nav__item
+        =link_to('/porfolio')
+          | Portfolio
+      li.global-nav__item
+        =link_to('/team')
+          | Team
+      li.global-nav__item
+        =link_to('https://medium.com/cylinder-blog')
+          | Blog
+      li.global-nav__item
+        =link_to('#contact-us', 'data-scroll' => '')
+          | Contact

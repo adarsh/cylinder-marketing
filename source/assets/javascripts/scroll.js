@@ -193,7 +193,6 @@ window.smoothScroll = (function (window, document, undefined) {
       // Selectors and variables
       options = _mergeObjects( _defaults, options || {} ); // Merge user options with defaults
       var toggles = document.querySelectorAll('[data-scroll]'); // Get smooth scroll toggles
-
       // When a toggle is clicked, run the click handler
       Array.prototype.forEach.call(toggles, function (toggle, index) {
         toggle.addEventListener('click', animateScroll.bind( null, toggle, toggle.getAttribute('href'), options ), false);

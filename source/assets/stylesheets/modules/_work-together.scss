@@ -1,19 +1,16 @@
-.work-together {
+.work {
   @include linear-gradient(50deg, #434343, #3B424F);
-  background-position: center center;
-  background-size: 100%;
-  position: relative;
-  background-repeat: no-repeat;
-  .poster{
-    @include media($medium-screen-up){
-      display: flex;
-      align-items: center;
-    }
+}
+
+.work__poster{
+  @include media($medium-screen-up){
+    display: flex;
+    align-items: center;
   }
 }
 
-.work-together-content-text {
-  color: white;
+.work-content {
+  color: $white;
   font-size: em(18);
   line-height: 1.8;
   @include media($medium-screen-up){
@@ -25,7 +22,7 @@
 }
 
 
-.work-together-cta{
+.work-cta{
   @include media($medium-screen-up){
     @include span-columns(5);
     .cta{

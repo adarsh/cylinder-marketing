@@ -11,16 +11,16 @@ $hero-text-color: $white;
 }
 
 .hero-container {
-//  @include animation-name(hero);
-//  @include animation-duration(0.9s);
-
+  @include animation-name(hero);
+  @include animation-duration(1.3s);
+  @include animation-timing-function(cubic-bezier(.72,.71,.5,1.17));
   @include media($large-screen-up){
     padding-top: 10em;
     padding-bottom: 10em;
   }
 }
 
-.hero-content-text {
+.hero-content {
   @include span-columns(12);
   @include media($medium-screen-up){
     @include span-columns(10);
@@ -28,10 +28,4 @@ $hero-text-color: $white;
   @include media($large-screen-up){
     @include span-columns(8);
   }
-}
-
-.hero-content-text-subtitle {
-  color: $hero-text-color;
-  font-size: 100%;
-  font-weight: 300;
 }

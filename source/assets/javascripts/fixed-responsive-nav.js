@@ -50,7 +50,7 @@
     }
 
     // Find navigation links and save a reference to them
-    var nav = document.querySelector(".nav-collapse ul"),
+    var nav = document.querySelector(".nav-collapse"),
       links = nav.querySelectorAll("a[href^='#']");
 
     // "content" will store all the location cordinates

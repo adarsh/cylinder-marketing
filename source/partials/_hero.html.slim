@@ -1,10 +1,7 @@
 header.hero#home
-  .wrap-container
-    .billboard-container.hero-container
-      .hero-content-text
-        h1.hero-size
-          | WE SOLVE BUSINESS
-            PROBLEMS WITH
-            DIGITAL PRODUCTS
-        =link_to('/#contact-us', class: 'cta')
-          |  Contact Us
+  .wrap-container.billboard-container.hero-container
+    .hero-content
+      h1.hero-heading
+        | We solve business problems with digital products
+      =link_to('#contact-us', class: 'cta', 'data-scroll' => '')
+        |  Contact Us
