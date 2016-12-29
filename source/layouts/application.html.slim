@@ -11,6 +11,8 @@ html
 
   body class=page_classes
     = partial('partials/navigation')
-    = yield
+    main
+      = yield
+    = partial('partials/work-together')
     = partial('partials/footer')
     = partial('partials/javascript')
