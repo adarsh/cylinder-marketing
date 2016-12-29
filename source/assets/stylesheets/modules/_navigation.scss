@@ -84,4 +84,7 @@ body{
     left:0;
     background-color: $cylinder-blue;
   }
+  &.global-nav__item--contact.active > a:after{
+    display: none;
+  }
 }

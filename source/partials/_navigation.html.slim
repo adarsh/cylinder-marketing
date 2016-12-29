@@ -3,24 +3,51 @@ nav.global-nav
     =link_to('/', class: 'logo')
       =image_tag('cylinder-logo.svg')
     ul.global-nav__items.nav-collapse
-      li.global-nav__item.active
-        =link_to('#home', 'data-scroll' => '')
-          | Home
       li.global-nav__item
-        =link_to('#services', 'data-scroll' => '')
-          | Services
+        - if current_page.url == '/'
+          =link_to('#home', 'data-scroll' => '')
+            | Home
+        - else
+          =link_to('/')
+            | Home
       li.global-nav__item
-        =link_to('#clients', 'data-scroll' => '')
-          | Clients
+        - if current_page.url == '/'
+          =link_to('#services', 'data-scroll' => '')
+            | Services
+        - else
+          =link_to('/#services')
+            | Services
       li.global-nav__item
-        =link_to('/porfolio')
-          | Portfolio
+        - if current_page.url == '/'
+          =link_to('#clients', 'data-scroll' => '')
+            | Clients
+        - else
+          =link_to('/#clients')
+            | Clients
+      - if current_page.url == '/portfolio/'
+        li.global-nav__item.active
+          =link_to('/porfolio')
+            | Portfolio
+      - else
+        li.global-nav__item
+          =link_to('/porfolio')
+            | Portfolio
+      - if current_page.url == '/team/'
+        li.global-nav__item.active
+          =link_to('/team')
+            | Team
+      - else
+        li.global-nav__item
+          =link_to('/team')
+            | Team
       li.global-nav__item
-        =link_to('/team')
-          | Team
-      li.global-nav__item
-        =link_to('https://medium.com/cylinder-blog')
+        =link_to('https://medium.com/cylinder-blog', target: '_blank')
           | Blog
-      li.global-nav__item
-        =link_to('#contact-us', 'data-scroll' => '')
-          | Contact
+      - unless current_page.url == '/'
+        li.global-nav__item.global-nav__item--contact
+          =link_to('#contact-us', 'data-scroll' => '')
+            | Contact
+      - else
+        li.global-nav__item
+          =link_to('#contact-us', 'data-scroll' => '')
+            | Contact
