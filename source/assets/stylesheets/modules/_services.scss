@@ -41,6 +41,10 @@ $hiring: #FF2A76;
 .services__icon {
   width: 15%;
   margin-bottom: 1.5rem;
+  > img{
+    width: 100%;
+    max-width: 50px;
+  }
 }
 
 .services__title {
