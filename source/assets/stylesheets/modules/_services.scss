@@ -14,15 +14,8 @@ $hiring: #FF2A76;
   padding: 0;
   margin-bottom: 2rem;
   line-height: 1.8;
-  padding: 0 1rem;
-  &:first-child{
-    padding-left: 0;
-    padding-right: 2rem;
-  }
   &:last-child{
     margin-bottom: 0;
-    padding-left: 2rem;
-    padding-right: 0;
   }
   @include media($medium-screen-up) {
     @include shift(3);
@@ -35,6 +28,15 @@ $hiring: #FF2A76;
     @include span-columns(4);
     @include omega(3n);
     margin-bottom: 0;
+    padding: 0 1rem;
+    &:first-child{
+      padding-left: 0;
+      padding-right: 2rem;
+    }
+    &:last-child{
+      padding-left: 2rem;
+      padding-right: 0;
+    }
   }
 }
 
