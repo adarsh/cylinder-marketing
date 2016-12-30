@@ -3,9 +3,10 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: $cylinder-blue;
   @include media($hero-img-width){
-    background: right top no-repeat linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent),
-                center center no-repeat url("/assets/images/people-bg.jpg"),
+    background: linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent) right top no-repeat,
+                url("/assets/images/people-bg.jpg") center center no-repeat,
                 $cylinder-blue;
     background-size: 50% 100%, auto;
   }
