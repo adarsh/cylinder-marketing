@@ -13,6 +13,7 @@ html
     = partial('partials/navigation')
     main
       = yield
-    = partial('partials/work-together')
-    = partial('partials/footer')
+    .sticky
+      = partial('partials/work-together')
+      = partial('partials/footer')
     = partial('partials/javascript')
