@@ -1,4 +1,6 @@
 $hero-text-color: $white;
+$hero-img-width: 1560px;
+$hero-img-dark-color: #10589D;
 
 @import '../animations/hero';
 
@@ -6,8 +8,14 @@ $hero-text-color: $white;
   background-image: url("/assets/images/intro-bg.jpg");
   background-position: center center;
   background-size: cover;
+  background-color: $cylinder-blue;
   background-repeat: no-repeat;
-  position: relative;
+  @include media($hero-img-width){
+    background: right top no-repeat linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent),
+                center center no-repeat url("/assets/images/intro-bg.jpg"),
+                $cylinder-blue;
+    background-size: 50% 100%, auto;
+  }
 }
 
 .hero-container {

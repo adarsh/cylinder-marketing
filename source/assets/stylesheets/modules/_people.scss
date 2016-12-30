@@ -2,8 +2,13 @@
   background-image: url("/assets/images/people-bg.jpg");
   background-position: center center;
   background-size: cover;
-  position: relative;
   background-repeat: no-repeat;
+  @include media($hero-img-width){
+    background: right top no-repeat linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent),
+                center center no-repeat url("/assets/images/people-bg.jpg"),
+                $cylinder-blue;
+    background-size: 50% 100%, auto;
+  }
 }
 
 .people-content {
