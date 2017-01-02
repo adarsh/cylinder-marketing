@@ -7,14 +7,18 @@
 // $visual-grid-opacity: 0.5;
 
 // Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
+//$column: 90px;
+//$gutter: 30px;
 // $grid-columns: 12;
-$max-width: em(1090);
+$max-width: em(1000);
 
 // Neat Breakpoints
+$medium-screen-max: em(639);
 $medium-screen: em(640);
+$large-screen-max: em(859);
 $large-screen: em(860);
 
+$medium-screen-down: new-breakpoint(max-width $medium-screen-max);
 $medium-screen-up: new-breakpoint(min-width $medium-screen);
+$large-screen-down: new-breakpoint(max-width $large-screen-max);
 $large-screen-up: new-breakpoint(min-width $large-screen);

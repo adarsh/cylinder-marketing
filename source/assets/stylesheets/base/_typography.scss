@@ -1,5 +1,8 @@
+@include font-face('Intro-W01', "../fonts/intro-bold/Intro-W01-Bold", $file-formats: eot ttf svg woff);
+@include font-face('Intro-W01 Regular', "../fonts/intro-regular/Intro-W01-Regular");
+@include font-face('DIN-Medium', "../fonts/din-medium/din-medium-webfont", $file-formats: eot ttf svg woff);
+
 body {
-  @include font-feature-settings('kern', 'liga', 'pnum');
 
   color: $base-font-color;
   font-family: $base-font-family;
@@ -8,13 +11,12 @@ body {
   line-height: $base-line-height;
 
   @include media($medium-screen-up) {
-    font-size: $base-font-size * 1.2;
+    font-size: $base-font-size;
   }
 }
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
@@ -81,4 +83,26 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.hero-heading{
+  font-size: em(32);
+  color: $white;
+  font-weight: 400;
+  margin: 0 0 em(5);
+  text-transform: uppercase;
+  @include media($medium-screen-up){
+    font-size: em(48);
+  }
+  @include media($large-screen-up){
+    font-size: em(58);
+  }
+}
+
+.section-title {
+  text-transform: uppercase;
+  padding: .5rem 0 .3rem 1rem;
+  border-left: 4px solid $cylinder-blue;
+  font-size: em(25);
+  position: relative;
 }

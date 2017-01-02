@@ -1,0 +1,28 @@
+.people {
+  background-image: url("/assets/images/people-bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $cylinder-blue;
+  @include media($hero-img-width){
+    background: linear-gradient(-90deg, $hero-img-dark-color, $hero-img-dark-color, transparent) right top no-repeat,
+                url("/assets/images/people-bg.jpg") center center no-repeat,
+                $cylinder-blue;
+    background-size: 50% 100%, auto;
+  }
+}
+
+.people-content {
+  color: white;
+  font-size: em(18);
+  line-height: 1.8;
+  & :last-child{
+    margin-bottom: 0;
+  }
+  @include media($medium-screen-up){
+    @include span-columns(10);
+  }
+  @include media($large-screen-up){
+    @include span-columns(8);
+  }
+}

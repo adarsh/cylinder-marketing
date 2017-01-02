@@ -1,0 +1,111 @@
+.nav-collapse{
+  max-height: 0;
+  clear: both;
+}
+
+@include media($large-screen-down){
+  .js .nav-collapse {
+    clip: rect(0 0 0 0);
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    zoom: 1;
+  }
+}
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.nav-toggle {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@include media($large-screen-up){
+  .js .nav-collapse {
+    position: relative;
+  }
+  .js .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+}
+
+
+.mask {
+  -webkit-transition: opacity 300ms;
+  -moz-transition: opacity 300ms;
+  transition: opacity 300ms;
+  background: rgba(0,0,0, .5);
+  visibility: hidden;
+  position: fixed;
+  opacity: 0;
+  z-index: 2;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.android .mask {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.js-nav-active .mask {
+  visibility: visible;
+  opacity: 1;
+}
+
+@include media($medium-screen-up){
+  .mask {
+    display: none !important;
+    opacity: 0 !important;
+  }
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@include media($large-screen-up){
+  .nav-collapse {
+    float: right;
+    width: auto;
+  }
+}
+
+@include media($large-screen-up){
+  .nav-collapse li {
+    width: auto;
+  }
+}
+
+.nav-collapse a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.nav-toggle {
+  float: right;
+  margin-top: 3px;
+  span{
+    @include burger(25px, 3px, 5px, grey);
+  }
+  &.active span{
+    @include burger-to-cross;
+  }
+}
