@@ -1,9 +1,9 @@
 @import 'vendor/normalize';
+@import 'vendor/flexboxgrid.min';
 
-@import 'bourbon';
-@import 'neat';
-@import 'base/base';
+@import "bourbon";
+@import "base/base";
 
-@import 'grid';
-@import 'global';
-@import 'modules/modules';
+@import "navigation";
+@import "logo";
+@import "hero";

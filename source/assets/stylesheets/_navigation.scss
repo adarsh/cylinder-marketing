@@ -1,0 +1,20 @@
+.nav {
+  &--global {
+    background-color: $white;
+    box-shadow: 0 1px 0 $light-gray;
+    padding: $base-spacing / 1.5 0;
+  }
+}
+
+.nav-links {
+  text-align: right;
+
+  a {
+    color: $medium-gray;
+    margin-left: $base-spacing;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}

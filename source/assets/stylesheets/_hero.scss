@@ -1,0 +1,14 @@
+.hero {
+  background: radial-gradient($cylinder-blue, darken($cylinder-blue, 10));
+  color: $white;
+  height: calc(100vh - 200px);
+
+  .container,
+  .row {
+    height: 100%;
+  }
+
+  .button {
+    margin-top: $base-spacing;
+  }
+}

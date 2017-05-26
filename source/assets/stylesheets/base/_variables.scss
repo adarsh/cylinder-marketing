@@ -12,9 +12,10 @@ $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: em(3);
-$base-spacing: $base-line-height * 1em;
+$base-border-radius: 2px;
+$base-spacing: $base-line-height * 1rem;
 $small-spacing: $base-spacing / 2;
+$large-spacing: $base-spacing * 2;
 $base-z-index: 0;
 
 // Colors
@@ -24,13 +25,13 @@ $black: #000;
 $yellow: #f2d168;
 
 // Brand Colors
-$light-blue: #73bdf8;    // colourlovers.com/color/73BDF8/Sweet_Water
-$cylinder-blue: #2a98ff; // colourlovers.com/color/2A98FF/Roller_Disco
-$dark-blue: #0477ba;     // colourlovers.com/color/0477BA/tranquil_waters
+$light-blue: #73bdf8;
+$cylinder-blue: #2a98ff;
+$dark-blue: #004F98;
 
-$light-gray: #ddd;
-$medium-gray: #999;
-$dark-gray: #333;
+$light-gray: #d5dde5;
+$medium-gray: #627180;
+$dark-gray: #002141;
 
 // Page Colors
 $base-accent-color: $dark-gray;
@@ -54,8 +55,8 @@ $form-box-shadow: inset 0 1px 3px rgba($black, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
 // Font Sizes
-$base-font-size: 1em;
-$h1-font-size: 2.5em;
+$base-font-size: 1rem;
+$h1-font-size: 2.5rem;
 $h2-font-size: $base-font-size * 1.6;
 $h3-font-size: $base-font-size * 1.3;
 $h4-font-size: $base-font-size * 1.25;

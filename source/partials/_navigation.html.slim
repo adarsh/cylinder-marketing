@@ -1,53 +1,12 @@
-nav.global-nav
-  .wrap-container.global-nav__container
-    =link_to('/', class: 'logo')
-      = image_tag 'logo-default.svg'
-    ul.global-nav__items.nav-collapse
-      li.global-nav__item
-        - if current_page.url == '/'
-          =link_to('#home', 'data-scroll' => '')
-            | Home
-        - else
-          =link_to('/')
-            | Home
-      li.global-nav__item
-        - if current_page.url == '/'
-          =link_to('#services', 'data-scroll' => '')
-            | Services
-        - else
-          =link_to('/#services')
-            | Services
-      /li.global-nav__item
-      /  - if current_page.url == '/'
-      /    =link_to('#clients', 'data-scroll' => '')
-      /      | Clients
-      /  - else
-      /    =link_to('/#clients')
-      /      | Clients
-      /- if current_page.url == '/portfolio/'
-      /  li.global-nav__item.active
-      /    =link_to('/portfolio')
-      /      | Portfolio
-      /- else
-      /  li.global-nav__item
-      /    =link_to('/portfolio')
-      /      | Portfolio
-      /- if current_page.url == '/team/'
-      /  li.global-nav__item.active
-      /    =link_to('/team')
-      /      | Team
-      /- else
-      /  li.global-nav__item
-      /    =link_to('/team')
-      /      | Team
-      li.global-nav__item
-        =link_to('https://medium.com/cylinder-blog', target: '_blank')
-          | Blog
-      - unless current_page.url == '/'
-        li.global-nav__item.global-nav__item--contact
-          =link_to('#contact-us', 'data-scroll' => '')
-            | Contact
-      - else
-        li.global-nav__item
-          =link_to('#contact-us', 'data-scroll' => '')
-            | Contact
+nav.nav--global
+  .container
+    .row.between-xs.middle-xs
+      .col-xs-6.col-sm-4
+        = link_to "/", class: "logo"
+          = image_tag "logo/logo-secondary.svg"
+
+      .col-xs-6.col-sm-4
+        .nav-links
+          = link_to "Services", "services"
+          = link_to "Blog", "services"
+          = link_to "Contact", "services"
