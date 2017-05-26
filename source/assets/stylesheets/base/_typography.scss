@@ -1,9 +1,10 @@
-@include font-face('Intro-W01', "../fonts/intro-bold/Intro-W01-Bold", $file-formats: eot ttf svg woff);
-@include font-face('Intro-W01 Regular', "../fonts/intro-regular/Intro-W01-Regular");
-@include font-face('DIN-Medium', "../fonts/din-medium/din-medium-webfont", $file-formats: eot ttf svg woff);
+@include font-face("Avenir-Light", "../fonts/avenir/Avenir-Light", $file-formats: eot ttf woff);
+@include font-face("Avenir-Book", "../fonts/avenir/Avenir-Book", $file-formats: eot ttf woff);
+@include font-face("Avenir-Medium", "../fonts/avenir/Avenir-Medium", $file-formats: eot ttf woff);
+@include font-face("Avenir-Heavy", "../fonts/avenir/Avenir-Heavy", $file-formats: eot ttf woff);
+
 
 body {
-
   color: $base-font-color;
   font-family: $base-font-family;
   font-size: $base-font-size;

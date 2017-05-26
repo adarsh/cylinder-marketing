@@ -1,6 +1,11 @@
+$light-font-family: 'Avenir-Light', Helvetica, sans-serif;
+$book-font-family: 'Avenir-Book', Helvetica, sans-serif;
+$medium-font-family: 'Avenir-Medium', Helvetica, sans-serif;
+$bold-font-family: 'Avenir-Heavy', Helvetica, sans-serif;
+
 // Typography
-$base-font-family: 'DIN-Medium', sans-serif;;
-$heading-font-family: 'Intro-W01', sans-serif;;
+$base-font-family: $medium-font-family;
+$heading-font-family: $bold-font-family;
 
 // Line height
 $base-line-height: 1.5;

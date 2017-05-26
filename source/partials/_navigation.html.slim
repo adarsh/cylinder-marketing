@@ -1,7 +1,7 @@
 nav.global-nav
   .wrap-container.global-nav__container
     =link_to('/', class: 'logo')
-      =image_tag('cylinder-logo.svg')
+      = image_tag 'logo-default.svg'
     ul.global-nav__items.nav-collapse
       li.global-nav__item
         - if current_page.url == '/'
