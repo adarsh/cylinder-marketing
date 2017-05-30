@@ -1,11 +1,11 @@
-section#contact-us.work
-  .wrap-container.poster.work__poster
-    .work-content
-      h1.hero-size
-        | LET'S WORK TOGETHER
-      p
-        | Get in touch with us and we will contact you to discuss
-        |  how we can help you solve business problems.
-    .work-cta
-      = link_to('mailto:hi@cylinder.work', class: 'cta cta--secondary cta--large')
-        |  Contact Us
+section#contact.highlight-background
+  .container
+    .row.middle-xs.between-xs
+      .col-xs-12.col-sm-6
+        h2.section-heading Let's work together!
+        h3.secondary-heading Get in touch with us and we will contact you to discuss how we can help you solve business problems.
+        .vertical-spacer
+        = link_to "Get In Touch", "#contact-us", class: "button button--large button--white"
+
+      .col-xs-12.col-sm-5
+        = image_tag "illustration/contact-illustration.svg"

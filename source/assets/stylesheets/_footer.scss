@@ -1,0 +1,30 @@
+footer {
+  color: $medium-gray;
+  background: $dark-gray;
+  padding: $large-spacing 0;
+
+  a {
+    @include size(38px);
+    border: 1px solid rgba($white, 0.2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    fill: $cylinder-blue;
+  }
+
+  svg {
+    height: 50%;
+    width: 50%;
+  }
+
+  a:hover {
+    border-color: $cylinder-blue;
+
+    svg path {
+      fill: $cylinder-blue;
+    }
+  }
+}

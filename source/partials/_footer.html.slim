@@ -1,17 +1,21 @@
-footer.global-footer
-  .wrap-container.global-footer__container
-    small.credits
-      | © #{ Time.now.year } Cylinder Digital, Inc.
-    ul.social.footer__social
-      /li.social__item
-      /  =link_to('', class: 'social__link', target: '_blank')
-      /    i.fa-facebook.fa
-      li.social__item
-        =link_to('https://twitter.com/cylinderdigital', class: 'social__link', target: '_blank')
-          i.fa-twitter.fa
-      li.social__item
-        =link_to('https://medium.com/@cylinderdigital', class: 'social__link', target: '_blank')
-          i.fa-medium.fa
-      li.social__item
-        =link_to('https://github.com/adarsh/cylinder-marketing', class: 'social__link', target: '_blank')
-          i.fa-github.fa
+footer
+  .container
+    .row.between-xs.middle-xs
+      .col-xs-12.col-sm-6
+        = image_tag "logo/logo-white.svg", height: "30px"
+        p
+          small &copy; #{ Time.now.year } Cylinder Digital, Inc.
+
+      .col-sm-6
+        .row.end-sm
+          .col-xs-1
+            = link_to "https://twitter.com/cylinderdigital", target: "_blank" do
+              = partial "assets/images/icon/icon-twitter.svg"
+
+          .col-xs-1
+            = link_to "https://medium.com/@cylinderdigital", target: "_blank" do
+              = partial "assets/images/icon/icon-medium.svg"
+
+          .col-xs-1
+            = link_to "https://github.com/adarsh/cylinder-marketing", target: "_blank" do
+              = partial "assets/images/icon/icon-github.svg"

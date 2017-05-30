@@ -25,11 +25,19 @@ section {
   padding: $large-spacing * 2 0;
 }
 
-.highlight-backgroud {
+.highlight-background {
   background-color: $cylinder-blue;
   color: $white;
 }
 
 .light-background {
   background-color: lighten($light-gray, 10);
+}
+
+#people {
+  background-image: image-url("illustration/people-illustration.svg");
+  background-position: 90% 125%;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid #0065C3;
+  min-height: 230px
 }

@@ -1,0 +1,42 @@
+.avatar {
+  @include size(3.5rem);
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  display: inline-block;
+  margin: 0 $small-spacing 0 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+
+  img {
+    @include size(3.75rem);
+  }
+
+  &--small {
+    @include size(2rem);
+    font-size: 0.75rem;
+
+    img {
+      @include size(2.5rem);
+    }
+
+    span {
+      line-height: 2rem;
+    }
+  }
+
+  &--large {
+    @include size(5rem);
+    font-size: 1.5rem;
+
+    img {
+      @include size(5rem);
+    }
+
+    span {
+      line-height: 5rem;
+    }
+  }
+}

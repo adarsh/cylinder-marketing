@@ -71,6 +71,36 @@ a {
   }
 }
 
+blockquote {
+  color: $medium-gray;
+  font-size: 1.125rem;
+  margin: 0;
+  position: relative;
+  text-align: left;
+
+  &:before,
+  &:after {
+    color: $light-gray;
+    display: block;
+    font-family: Georgia;
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  &:before {
+    @include position(absolute, 0px null null -2rem);
+    content: "\201C";
+  }
+
+  &:after {
+    @include position(absolute, null null 0px null);
+    display: inline;
+    content: "\201D";
+    line-height: 0;
+    padding-left: $small-spacing / 2;
+  }
+}
+
 hr {
   border-bottom: $base-border;
   border-left: 0;
@@ -86,9 +116,9 @@ picture {
 }
 
 .primary-heading {
+  color: $white;
   font-family: $bold-font-family;
   font-size: 2.5rem;
-  color: $white;
   line-height: 1.3;
   margin: 0 0 $small-spacing;
 }
