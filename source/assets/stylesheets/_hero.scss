@@ -3,7 +3,7 @@
   color: $white;
   height: calc(100vh - 200px);
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     height: auto;
     padding: $large-spacing 0;
 
