@@ -12,7 +12,7 @@ body {
   max-width: 1200px;
   width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     padding: 0 $base-spacing;
   }
 }
@@ -28,7 +28,7 @@ body {
 section {
   padding: $large-spacing * 2 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     padding: $large-spacing 0;
   }
 }
@@ -49,7 +49,7 @@ section {
   border-bottom: 4px solid #0065C3;
   min-height: 230px;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     padding-bottom: 150px;
     background-position: center bottom;
     background-size: 70% auto;

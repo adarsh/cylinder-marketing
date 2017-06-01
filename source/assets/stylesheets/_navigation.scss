@@ -10,7 +10,7 @@
   display: none;
   text-align: right;
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     display: block;
   }
 }
@@ -27,7 +27,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile-break) {
     @include position(absolute, 72px null null 0px);
     background: rgba(#fff, 0.95);
     min-height: 100vh;
