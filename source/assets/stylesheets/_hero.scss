@@ -3,6 +3,15 @@
   color: $white;
   height: calc(100vh - 200px);
 
+  @media (max-width: 768px) {
+    height: auto;
+    padding: $large-spacing 0;
+
+    img {
+      height: 200px;
+    }
+  }
+
   .container,
   .row {
     height: 100%;

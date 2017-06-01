@@ -8,13 +8,14 @@ section#clients
     .vertical-spacer
 
     .row.center-xs
-      .col-xs-3.col-sm-2
+      .col-xs-6.col-sm-2
         = image_tag "clients/logo-c40.png", alt: "c40.org"
-      .col-xs-3.col-sm-2
+      .col-xs-6.col-sm-2
         = image_tag "clients/logo-fastly.png", alt: "Fastly"
-      .col-xs-3.col-sm-2
+        .vertical-spacer--small
+      .col-xs-6.col-sm-2
         = image_tag "clients/logo-anyperk.png", alt: "AnyPerk"
-      .col-xs-3.col-sm-2
+      .col-xs-6.col-sm-2
         = image_tag "clients/logo-wootric.png", alt: "Wootric"
 
     .row.center-xs
@@ -23,27 +24,33 @@ section#clients
         hr
         .vertical-spacer
 
-    .row.around-sm
-      .col-xs-12.col-sm-5
+    .row.center-xs.start-sm.around-sm
+      .col-xs-10.col-sm-5
         blockquote
           span
           | We asked Cylinder to help advance our enterprise healthcare application, and they ended up leveling up our entire team. Cylinder's developers brought a fresh perspective on everything from architecture to hiring.
-        p
+
+        .row.middle-xs
           .avatar
             = image_tag "clients/able-health.jpg"
 
-          strong Steve Daniels
-          ' , Co-founder at
-          = link_to "Able Health", "http://ablehealth.com", target: "_blank"
+          span
+            strong Steve Daniels
+            ' , Co-founder at
+            = link_to "Able Health", "http://ablehealth.com", target: "_blank"
 
-      .col-xs-12.col-sm-5
+        .vertical-spacer
+
+      .col-xs-10.col-sm-5
         blockquote
           span
           | Cylinder Digital took the time to understand C40's needs as a global nonprofit and helped us identify the right tools and platforms for our unique requirements and cost parameters. They then delivered what they promised. We now have a flexible suite of apps that are easy to use and ensure that the C40 message is clear and accessible for all our stakeholders.
-        p
+
+        .row.middle-xs
           .avatar
             = image_tag "clients/c40.jpg"
 
-          strong Jared Pruzan
-          ' , of
-          = link_to "C40.org", "http://www.c40.org", target: "_blank"
+          span
+            strong Jared Pruzan
+            ' , of
+            = link_to "C40.org", "http://www.c40.org", target: "_blank"

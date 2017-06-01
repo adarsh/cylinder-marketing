@@ -3,10 +3,13 @@ nav.nav--global
     .row.between-xs.middle-xs
       .col-xs-6.col-sm-4
         = link_to "/", class: "logo"
-          = image_tag "logo/logo-secondary.svg"
+          = image_tag "logo/logo-default.svg"
 
       .col-xs-6.col-sm-4
         .nav-links
           = link_to "Services", "#services"
           = link_to "Blog", "https://medium.com/cylinder-blog", target: "_blank"
           = link_to "Contact", "#contact"
+
+        = link_to "Menu", "#", class: "menu-trigger"
+

@@ -52,6 +52,10 @@ p {
   color: $medium-gray;
   font-size: 1.0625rem;
   margin: 0 0 $small-spacing;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 }
 
 a {
@@ -74,7 +78,7 @@ a {
 blockquote {
   color: $medium-gray;
   font-size: 1.125rem;
-  margin: 0;
+  margin: 0 0 $small-spacing;
   position: relative;
   text-align: left;
 
@@ -121,11 +125,19 @@ picture {
   font-size: 2.5rem;
   line-height: 1.3;
   margin: 0 0 $small-spacing;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 }
 
 .secondary-heading {
   font-family: $medium-font-family;
   font-size: 1.375rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
 }
 
 .tertiary-heading {
@@ -137,4 +149,8 @@ picture {
   font-family: $bold-font-family;
   font-size: 1.75rem;
   line-height: 1.4;
+
+  @media (max-width: 768px) {
+    font-size: 1.375rem;
+  }
 }

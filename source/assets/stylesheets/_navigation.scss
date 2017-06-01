@@ -6,6 +6,15 @@
   }
 }
 
+.menu-trigger {
+  display: none;
+  text-align: right;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
 .nav-links {
   text-align: right;
 
@@ -15,6 +24,35 @@
 
     &:hover {
       color: $dark-blue;
+    }
+  }
+
+  @media (max-width: 768px) {
+    @include position(absolute, 72px null null 0px);
+    background: rgba(#fff, 0.95);
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(10%);
+    width: 100%;
+    z-index: -1;
+  }
+
+  &.active {
+    transform: translateY(0%);
+    transition: all 0.2s linear;
+    opacity: 1;
+    z-index: 3;
+
+    a {
+      display: block;
+      margin: 0;
+      padding: $base-spacing 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    a:before {
+      background: transparent;
     }
   }
 }

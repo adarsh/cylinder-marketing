@@ -11,6 +11,10 @@ body {
   padding: 0 $large-spacing;
   max-width: 1200px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    padding: 0 $base-spacing;
+  }
 }
 
 .vertical-spacer {
@@ -23,6 +27,10 @@ body {
 
 section {
   padding: $large-spacing * 2 0;
+
+  @media (max-width: 768px) {
+    padding: $large-spacing 0;
+  }
 }
 
 .highlight-background {
@@ -39,5 +47,11 @@ section {
   background-position: 90% 125%;
   background-repeat: no-repeat;
   border-bottom: 4px solid #0065C3;
-  min-height: 230px
+  min-height: 230px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 150px;
+    background-position: center bottom;
+    background-size: 70% auto;
+  }
 }
