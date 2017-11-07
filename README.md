@@ -92,4 +92,4 @@ Have a fix or want to add a feature?
 
 ## License
 
-Copyright © 2017 [Cylinder Digital, Inc.](http://cylinder.work).
+Copyright © 2017 [Cylinder Digital, Inc.](http://cylinder.digital).

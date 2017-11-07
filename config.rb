@@ -25,7 +25,7 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-set :url_root, 'http://cylinder.work'
+set :url_root, 'http://cylinder.digital'
 
 activate :search_engine_sitemap,
   default_priority: 1,
