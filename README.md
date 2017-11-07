@@ -4,11 +4,14 @@
 
 This is the
 marketing site for Cylinder,
-found at http://cylinder.work.
+found at http://cylinder.digital.
 
-It's built in Middlman
-using Proteus for configuration.
-We are deployed to GitHub Pages.
+It's built in [Middleman].
+We are deployed to [GitHub Pages].
+
+[Middleman]: https://middlemanapp.com
+[Github Pages]: https://pages.github.com
+
 
 
 ## About Middleman
@@ -37,8 +40,6 @@ Pages.
 * [Coffeescript](http://coffeescript.org):
   Write javascript with simpler syntax
 
-We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns and [Proteus](http://github.com/thoughtbot/proteus) for a collection of useful
-starter kits to help you prototype faster.
 
 ## Getting Started
 
@@ -51,7 +52,8 @@ Install a Ruby manager like
 * [`chruby`](https://github.com/postmodern/chruby#install)
 * [`rvm`](https://github.com/rvm/rvm#installation)
 
-This repository uses Ruby version 2.3.1.
+This repository uses the Ruby version specified in the
+[.ruby-version](.ruby-version) file.
 
 ### Install dependencies
 ```
