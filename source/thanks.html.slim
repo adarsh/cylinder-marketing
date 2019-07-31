@@ -1,6 +1,15 @@
-.container
-  .row.center-xs
-    .col-xs-12.col-sm-6
-      .vertical-spacer
-      h1.section-heading Thank you!
-      .vertical-spacer
+section.light-background
+  .container
+    .row.center-xs
+      .col-xs-12.col-sm-5
+        = image_tag "icon/icon-team.svg", alt: "Thank you", height: "80"
+
+        .vertical-spacer
+
+        h1.section-heading Thank you!
+
+        .vertical-spacer
+
+        = link_to "Back to home", "/"
+
+        .vertical-spacer
