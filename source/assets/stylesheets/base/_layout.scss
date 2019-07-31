@@ -9,7 +9,13 @@ body {
 }
 
 main {
-  flex: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-height {
+  flex: 1 1 100%;
 }
 
 .container {
