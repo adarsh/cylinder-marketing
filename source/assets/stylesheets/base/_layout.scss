@@ -3,7 +3,19 @@ html, body {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-height {
+  flex: 1 1 100%;
 }
 
 .container {

@@ -2,6 +2,7 @@
   background: radial-gradient($cylinder-blue, darken($cylinder-blue, 10));
   color: $white;
   height: calc(100vh - 200px);
+  max-height: 600px;
 
   @media (max-width: $mobile-break) {
     height: auto;
