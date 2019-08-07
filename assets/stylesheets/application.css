@@ -1091,7 +1091,31 @@ html, body {
   min-height: 100%; }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh; }
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.full-height {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%; }
 
 .container {
   box-sizing: border-box;
@@ -1316,7 +1340,6 @@ picture {
 
 .nav--global {
   background-color: #fff;
-  box-shadow: 0 1px 0 #10202f;
   padding: 1.25rem 0; }
 
 .menu-trigger {
@@ -1370,7 +1393,8 @@ picture {
   background: -webkit-radial-gradient(#2a98ff, #007ff6);
   background: radial-gradient(#2a98ff, #007ff6);
   color: #fff;
-  height: calc(100vh - 200px); }
+  height: calc(100vh - 200px);
+  max-height: 600px; }
   @media (max-width: 768px) {
     .hero {
       height: auto;
