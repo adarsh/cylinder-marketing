@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'bourbon'
 gem 'image_optim'
+gem 'json', '~> 1.8.3'
 gem 'middleman', '~> 4.0'
 gem 'middleman-autoprefixer'
 gem 'middleman-deploy', '= 2.0.0.pre.alpha'
