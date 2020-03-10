@@ -36,7 +36,7 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.0.0)
       addressable (~> 2)
-    ffi (1.9.14)
+    ffi (1.9.25)
     fspath (3.0.1)
     haml (4.0.7)
       tilt
